@@ -13,7 +13,18 @@
 		F66EE6512533AC5500911F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE64F2533AC5500911F61 /* Main.storyboard */; };
 		F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6522533AC5800911F61 /* Assets.xcassets */; };
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
+		F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F66EE67E2533B1E800911F61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66EE63E2533AC5500911F61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F66EE6452533AC5500911F61;
+			remoteInfo = EmblemApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F66EE6462533AC5500911F61 /* EmblemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmblemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		F66EE6522533AC5800911F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F66EE6552533AC5800911F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66EE6572533AC5800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F66EE6432533AC5500911F61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66EE6762533B1E800911F61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F66EE6482533AC5500911F61 /* EmblemApp */,
+				F66EE67A2533B1E800911F61 /* ViewControllerTests */,
 				F66EE6472533AC5500911F61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F66EE6462533AC5500911F61 /* EmblemApp.app */,
+				F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				F66EE6572533AC5800911F61 /* Info.plist */,
 			);
 			path = EmblemApp;
+			sourceTree = "<group>";
+		};
+		F66EE67A2533B1E800911F61 /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */,
+				F66EE67D2533B1E800911F61 /* Info.plist */,
+			);
+			path = ViewControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = F66EE6462533AC5500911F61 /* EmblemApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F66EE6782533B1E800911F61 /* ViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66EE6822533B1E800911F61 /* Build configuration list for PBXNativeTarget "ViewControllerTests" */;
+			buildPhases = (
+				F66EE6752533B1E800911F61 /* Sources */,
+				F66EE6762533B1E800911F61 /* Frameworks */,
+				F66EE6772533B1E800911F61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F66EE67F2533B1E800911F61 /* PBXTargetDependency */,
+			);
+			name = ViewControllerTests;
+			productName = ViewControllerTests;
+			productReference = F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +148,10 @@
 				TargetAttributes = {
 					F66EE6452533AC5500911F61 = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					F66EE6782533B1E800911F61 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = F66EE6452533AC5500911F61;
 					};
 				};
 			};
@@ -115,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				F66EE6452533AC5500911F61 /* EmblemApp */,
+				F66EE6782533B1E800911F61 /* ViewControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +182,13 @@
 				F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */,
 				F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */,
 				F66EE6512533AC5500911F61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66EE6772533B1E800911F61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F66EE6752533B1E800911F61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F66EE67F2533B1E800911F61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F66EE6452533AC5500911F61 /* EmblemApp */;
+			targetProxy = F66EE67E2533B1E800911F61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F66EE64F2533AC5500911F61 /* Main.storyboard */ = {
@@ -319,6 +397,46 @@
 			};
 			name = Release;
 		};
+		F66EE6802533B1E800911F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AMLYNCKP6M;
+				INFOPLIST_FILE = ViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.petitcoding.ViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmblemApp.app/EmblemApp";
+			};
+			name = Debug;
+		};
+		F66EE6812533B1E800911F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AMLYNCKP6M;
+				INFOPLIST_FILE = ViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.petitcoding.ViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmblemApp.app/EmblemApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +454,15 @@
 			buildConfigurations = (
 				F66EE65B2533AC5800911F61 /* Debug */,
 				F66EE65C2533AC5800911F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66EE6822533B1E800911F61 /* Build configuration list for PBXNativeTarget "ViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66EE6802533B1E800911F61 /* Debug */,
+				F66EE6812533B1E800911F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
