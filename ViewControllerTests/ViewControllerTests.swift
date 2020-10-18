@@ -21,5 +21,18 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.emblemImageView, "Controller has no emblemImageView")
         
     }
+    
+    func testcontrollerUIImageViewHasTheCorrectImage() {
+        
+        guard  let sut = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateInitialViewController() as? ViewController else {
+            return XCTFail("Could not instantiate viewcontroller from main")
+        }
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertNotNil(sut.emblemImageView.image, "UIImageView in Controller doesnt have the image")
+        XCTAssertEqual(sut.emblemImageView.image?.accessibilityIdentifier, "emblem01")
+        
+    }
 
 }

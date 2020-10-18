@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emblemImageView.image = UIImage(named: "emblem01")
         // Do any additional setup after loading the view.
     }
 
