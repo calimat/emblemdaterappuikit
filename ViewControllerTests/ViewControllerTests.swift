@@ -9,27 +9,23 @@ import XCTest
 @testable import EmblemApp
 
 class ViewControllerTests: XCTestCase {
+    
+    func makeSUT() -> ViewController {
+        let sut = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateInitialViewController() as! ViewController
+        sut.loadViewIfNeeded()
+        return sut
+    }
 
     func testcontrollerhasFighterUIImageView() {
-        
-        guard  let sut = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateInitialViewController() as? ViewController else {
-            return XCTFail("Could not instantiate viewcontroller from main")
-        }
-        
-        sut.loadViewIfNeeded()
-        
+        let sut = makeSUT()
         XCTAssertNotNil(sut.fighterEmblemImageView, "Controller has no emblemImageView")
-        
     }
     
     func testcontrollerFighterUIImageViewHasTheCorrectImageWhichIsEmblem01() {
         
-        guard  let sut = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateInitialViewController() as? ViewController else {
-            return XCTFail("Could not instantiate viewcontroller from main")
-        }
-        
-        sut.loadViewIfNeeded()
+        let sut = makeSUT()
         let filename = "emblem01"
+        
         sut.createImage(filename)
         
         XCTAssertNotNil(sut.fighterEmblemImageView.image, "UIImageView in Controller doesnt have the image")
