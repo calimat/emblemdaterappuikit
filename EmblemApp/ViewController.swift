@@ -13,11 +13,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fighterEmblemImageView.image = UIImage(named: "emblem01")
+        
         // Do any additional setup after loading the view.
     }
 
     func createImage(_ name:String) {
+        fighterEmblemImageView.image = UIImage(named: "emblem01")
         fighterEmblemImageView.image?.accessibilityIdentifier = name
     }
 
