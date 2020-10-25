@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func createImage(_ name:String) {
+        fighterEmblemImageView.image?.accessibilityIdentifier = name
+    }
 
 }
 

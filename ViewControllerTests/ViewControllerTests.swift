@@ -29,6 +29,7 @@ class ViewControllerTests: XCTestCase {
         }
         
         sut.loadViewIfNeeded()
+        sut.createImage("emblem01")
         
         XCTAssertNotNil(sut.fighterEmblemImageView.image, "UIImageView in Controller doesnt have the image")
         XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, "emblem01")
