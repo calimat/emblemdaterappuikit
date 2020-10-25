@@ -29,10 +29,11 @@ class ViewControllerTests: XCTestCase {
         }
         
         sut.loadViewIfNeeded()
-        sut.createImage("emblem01")
+        let filename = "emblem01"
+        sut.createImage(filename)
         
         XCTAssertNotNil(sut.fighterEmblemImageView.image, "UIImageView in Controller doesnt have the image")
-        XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, "emblem01")
+        XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, filename)
         
     }
 
