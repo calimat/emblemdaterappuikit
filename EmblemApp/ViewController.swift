@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var fighterEmblemImageView:UIImageView!
     
+    @IBOutlet weak var supportEmblemImageView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

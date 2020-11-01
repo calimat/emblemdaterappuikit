@@ -21,6 +21,11 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.fighterEmblemImageView, "Controller has no emblemImageView")
     }
     
+    func testcontrollerhasSupportUIImageView() {
+        let sut = makeSUT()
+        XCTAssertNotNil(sut.supportEmblemImageView, "Controller has no emblemImageView")
+    }
+    
     func testcontrollerFighterUIImageViewHasTheCorrectImageWhichIsEmblem01() {
         
         let sut = makeSUT()
@@ -32,5 +37,6 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, filename)
         
     }
-
+    
+    
 }
