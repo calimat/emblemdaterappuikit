@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     func createImage(_ name:String) {
-        fighterEmblemImageView.image = UIImage(named: "emblem01")
+        fighterEmblemImageView.image = UIImage(named: name)
         fighterEmblemImageView.image?.accessibilityIdentifier = name
     }
 
