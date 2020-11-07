@@ -24,8 +24,8 @@
                                 <rect key="frame" x="20" y="288" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdy-Ha-Ihu">
-                                <rect key="frame" x="125" y="459" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ddx-vn-6Jm">
+                                <rect key="frame" x="56" y="436" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -34,7 +34,7 @@
                     </view>
                     <connections>
                         <outlet property="fighterEmblemImageView" destination="3Vg-c6-wU3" id="Gxg-Af-tZh"/>
-                        <outlet property="marksmanEmblemImageView" destination="Xdy-Ha-Ihu" id="vZj-ta-ZBg"/>
+                        <outlet property="marksmanEmblemImageView" destination="Ddx-vn-6Jm" id="vVk-Z4-2tI"/>
                         <outlet property="supportEmblemImageView" destination="hjh-X8-F7l" id="EWG-z2-hxV"/>
                     </connections>
                 </viewController>
