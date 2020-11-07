@@ -22,9 +22,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func createImage(_ name:String) {
+    func createImageFigther(_ name:String) {
         fighterEmblemImageView.image = UIImage(named: name)
         fighterEmblemImageView.image?.accessibilityIdentifier = name
+    }
+    
+    func createImageSupport(_ name:String) {
+        supportEmblemImageView.image = UIImage(named: name)
+        supportEmblemImageView.image?.accessibilityIdentifier = name
     }
 
 }
