@@ -34,7 +34,7 @@ class ViewControllerTests: XCTestCase {
     
     func testcontrollerFighterUIImageViewHasTheCorrectImageWhichIsEmblem01() {
         
-        let filename = "emblem01"
+        let filename = "emblem1"
         let sut = makeSUT()
         sut.createImageFigther(filename)
         XCTAssertNotNil(sut.fighterEmblemImageView.image, "UIImageView in Controller doesnt have the image")
@@ -43,7 +43,7 @@ class ViewControllerTests: XCTestCase {
     }
     
     func testcontrollerSupportUIImageViewHasTheCorrectImageWhichIsEmblem02() {
-        let filename = "emblem02"
+        let filename = "emblem2"
         let sut = makeSUT()
         sut.createImageSupport(filename)
         XCTAssertNotNil(sut.supportEmblemImageView.image, "UIImageView in Controller doesnt have the image")
@@ -53,7 +53,7 @@ class ViewControllerTests: XCTestCase {
     
     
     func testcontrollerSupportUIImageViewHasTheCorrectImageWhichIsEmblem03() {
-        let filename = "emblem03"
+        let filename = "emblem3"
         let sut = makeSUT()
         sut.createImageMarksman(filename)
         XCTAssertNotNil(sut.marksmanEmblemImageView.image, "UIImageView in Controller doesnt have the image")
