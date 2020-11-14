@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         supportEmblemImageView.image = UIImage(named: name)
         supportEmblemImageView.image?.accessibilityIdentifier = name
     }
+    
+    func createImageMarksman(_ name:String) {
+        marksmanEmblemImageView.image = UIImage(named: name)
+        marksmanEmblemImageView.image?.accessibilityIdentifier = name
+    }
 
 }
 
