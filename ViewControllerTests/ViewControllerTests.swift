@@ -41,28 +41,13 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, "emblem1")
         XCTAssertNotNil(sut.supportEmblemImageView.image, "UIImageView in Controller doesnt have the image")
         XCTAssertEqual(sut.supportEmblemImageView.image?.accessibilityIdentifier, "emblem2")
-        
-        
-    }
-    
-    func testcontrollerSupportUIImageViewHasTheCorrectImageWhichIsEmblem02() {
-        let filename = "emblem2"
-        let sut = makeSUT()
-        sut.createImageSupport(filename)
-        XCTAssertNotNil(sut.supportEmblemImageView.image, "UIImageView in Controller doesnt have the image")
-        XCTAssertEqual(sut.supportEmblemImageView.image?.accessibilityIdentifier, filename)
-        
-    }
-    
-    
-    func testcontrollerSupportUIImageViewHasTheCorrectImageWhichIsEmblem03() {
-        let filename = "emblem3"
-        let sut = makeSUT()
-        sut.createImageMarksman(filename)
         XCTAssertNotNil(sut.marksmanEmblemImageView.image, "UIImageView in Controller doesnt have the image")
-        XCTAssertEqual(sut.marksmanEmblemImageView.image?.accessibilityIdentifier, filename)
+        XCTAssertEqual(sut.marksmanEmblemImageView.image?.accessibilityIdentifier, "emblem3")
+        
         
     }
+    
+ 
     
     
 }

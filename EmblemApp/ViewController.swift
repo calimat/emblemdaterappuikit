@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     func setupImages(_ name:String) {
-        let imageviews = [fighterEmblemImageView, supportEmblemImageView]
+        let imageviews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView]
         var count = 1
         for imageview in imageviews {
             imageview?.image = UIImage(named: name + String(count))
@@ -32,15 +32,5 @@ class ViewController: UIViewController {
         }
     }
     
-    func createImageSupport(_ name:String) {
-        supportEmblemImageView.image = UIImage(named: name)
-        supportEmblemImageView.image?.accessibilityIdentifier = name
-    }
-    
-    func createImageMarksman(_ name:String) {
-        marksmanEmblemImageView.image = UIImage(named: name)
-        marksmanEmblemImageView.image?.accessibilityIdentifier = name
-    }
-
 }
 
