@@ -34,11 +34,11 @@ class ViewControllerTests: XCTestCase {
     
     func testcontrollerFighterUIImageViewHasTheCorrectImageWhichIsEmblem01() {
         
-        let filename = "emblem1"
+        let filename = "emblem"
         let sut = makeSUT()
         sut.createImageFigther(filename)
         XCTAssertNotNil(sut.fighterEmblemImageView.image, "UIImageView in Controller doesnt have the image")
-        XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, filename)
+        XCTAssertEqual(sut.fighterEmblemImageView.image?.accessibilityIdentifier, "emblem1")
         
     }
     

@@ -23,8 +23,13 @@ class ViewController: UIViewController {
     }
 
     func createImageFigther(_ name:String) {
-        fighterEmblemImageView.image = UIImage(named: name)
-        fighterEmblemImageView.image?.accessibilityIdentifier = name
+        let imageviews = [fighterEmblemImageView]
+        var count = 1
+        for imageview in imageviews {
+            imageview?.image = UIImage(named: name + String(count))
+            imageview?.image?.accessibilityIdentifier = name + String(count)
+            count += 1
+        }
     }
     
     func createImageSupport(_ name:String) {
