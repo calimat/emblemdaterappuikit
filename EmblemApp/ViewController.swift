@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var
         assassinEmblemImageView:UIImageView!
     
+    @IBOutlet weak var mageEmblemImageView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
