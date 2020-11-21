@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var
         jungleEmblemImageView:UIImageView!
     
+    @IBOutlet weak var
+        assassinEmblemImageView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

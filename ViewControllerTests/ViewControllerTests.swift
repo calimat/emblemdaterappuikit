@@ -41,6 +41,11 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.jungleEmblemImageView, "Controller has no emblemImageView")
     }
     
+    func testcontrollerhasAssassinUIImageView() {
+        let sut = makeSUT()
+        XCTAssertNotNil(sut.assassinEmblemImageView, "Controller has no emblemImageView")
+    }
+    
     
     func testcontrollerFighterUIImageViewHasTheCorrectImageWhichIsEmblem01() {
         
