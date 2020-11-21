@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     func setupImages(_ name:String) {
-        let imageviews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView]
+        let imageviews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView, tankEmblemImageView]
         var count = 1
         for imageview in imageviews {
             imageview?.image = UIImage(named: name + String(count))

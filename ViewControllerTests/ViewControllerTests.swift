@@ -48,6 +48,8 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.supportEmblemImageView.image?.accessibilityIdentifier, "emblem2")
         XCTAssertNotNil(sut.marksmanEmblemImageView.image, "UIImageView in Controller doesnt have the image")
         XCTAssertEqual(sut.marksmanEmblemImageView.image?.accessibilityIdentifier, "emblem3")
+        XCTAssertNotNil(sut.tankEmblemImageView.image, "UIImageView in Controller doesnt have the image")
+        XCTAssertEqual(sut.tankEmblemImageView.image?.accessibilityIdentifier, "emblem4")
         
         
     }
