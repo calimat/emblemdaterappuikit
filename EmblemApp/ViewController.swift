@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tankEmblemImageView:UIImageView!
     
+    @IBOutlet weak var
+        jungleEmblemImageView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
