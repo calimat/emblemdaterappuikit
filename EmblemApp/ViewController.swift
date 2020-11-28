@@ -32,15 +32,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func setupImages(_ name:String) {
-        let imageviews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView, tankEmblemImageView, jungleEmblemImageView, assassinEmblemImageView, mageEmblemImageView]
-        var count = 1
-        for imageview in imageviews {
-            imageview?.image = UIImage(named: name + String(count))
-            imageview?.image?.accessibilityIdentifier = name + String(count)
-            count += 1
-        }
-    }
     
 }
 
