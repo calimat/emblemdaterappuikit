@@ -15,6 +15,7 @@
 		F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6522533AC5800911F61 /* Assets.xcassets */; };
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
 		F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */; };
+		F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemSettingsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */,
 				F66EE67D2533B1E800911F61 /* Info.plist */,
+				F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */,
 			);
 			path = ViewControllerTests;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */,
 				F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
