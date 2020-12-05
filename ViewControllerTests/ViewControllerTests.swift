@@ -51,5 +51,22 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.mageEmblemImageView, "Controller has no emblemImageView")
     }
     
+    class EmblemSettingsSpy: EmblemSettings {
+        var setImageCallCount = 0
+        override func setupImages(_ name: String, fighterEmblemImageView: UIImageView!, supportEmblemImageView: UIImageView!, marksmanEmblemImageView: UIImageView!, tankEmblemImageView: UIImageView!, jungleEmblemImageView: UIImageView!, assassinEmblemImageView: UIImageView!, mageEmblemImageView: UIImageView!) {
+            setImageCallCount = 1
+        }
+        
+    }
+    
+    func testcontrollercallsEmblemSettingsFunctionOnViewDidLoad() {
+        let spy = EmblemSettingsSpy()
+        let sut = ViewController(emblemSettings: spy)
+        sut.viewDidLoad()
+        XCTAssertEqual(spy.setImageCallCount, 1)
+        
+    }
+    
+    
     
 }
