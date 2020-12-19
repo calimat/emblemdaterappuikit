@@ -54,7 +54,7 @@ class ViewControllerTests: XCTestCase {
     func testFighterImageviewHasOneTapGestureRecognizer() {
         let sut = makeSUT()
         XCTAssert(sut.fighterEmblemImageView.isUserInteractionEnabled)
-       // XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
+        XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
     }
     
     class EmblemSettingsSpy: EmblemSettings {

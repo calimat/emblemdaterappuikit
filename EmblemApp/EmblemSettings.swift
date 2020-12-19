@@ -18,6 +18,16 @@ public class EmblemSettings {
             imageview?.image?.accessibilityIdentifier = name + String(count)
             count += 1
         }
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         fighterEmblemImageView.isUserInteractionEnabled = true
+        fighterEmblemImageView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        //let tappedImage = tapGestureRecognizer.view as! UIImageView
+
+        // Your action
     }
 }
