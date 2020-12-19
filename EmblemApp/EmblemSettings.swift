@@ -22,6 +22,7 @@ public class EmblemSettings {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         fighterEmblemImageView.isUserInteractionEnabled = true
         fighterEmblemImageView.addGestureRecognizer(tapGestureRecognizer)
+        supportEmblemImageView.isUserInteractionEnabled = true 
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)

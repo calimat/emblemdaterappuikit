@@ -55,6 +55,7 @@ class ViewControllerTests: XCTestCase {
         let sut = makeSUT()
         XCTAssert(sut.fighterEmblemImageView.isUserInteractionEnabled)
         XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
+        XCTAssert(sut.supportEmblemImageView.isUserInteractionEnabled)
     }
     
     class EmblemSettingsSpy: EmblemSettings {
