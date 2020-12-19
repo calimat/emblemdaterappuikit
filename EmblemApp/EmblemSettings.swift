@@ -18,6 +18,6 @@ public class EmblemSettings {
             imageview?.image?.accessibilityIdentifier = name + String(count)
             count += 1
         }
-
+        fighterEmblemImageView.isUserInteractionEnabled = true
     }
 }
