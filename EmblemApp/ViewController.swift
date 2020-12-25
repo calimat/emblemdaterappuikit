@@ -26,16 +26,21 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mageEmblemImageView:UIImageView!
     
-    var emblemSettings:EmblemSettings = EmblemSettings()
+    var emblemSettings:Settings!
     
-    convenience init(emblemSettings:EmblemSettings) {
+    convenience init(emblemSettings: @escaping Settings) {
         self.init()
         self.emblemSettings = emblemSettings
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.emblemSettings.setupImages("emblem", fighterEmblemImageView: fighterEmblemImageView, supportEmblemImageView: supportEmblemImageView, marksmanEmblemImageView: marksmanEmblemImageView, tankEmblemImageView: tankEmblemImageView, jungleEmblemImageView: jungleEmblemImageView, assassinEmblemImageView: assassinEmblemImageView, mageEmblemImageView: mageEmblemImageView)
+        self.emblemSettings("emblem",fighterEmblemImageView, supportEmblemImageView,marksmanEmblemImageView,tankEmblemImageView,jungleEmblemImageView,assassinEmblemImageView,mageEmblemImageView)
+        
+        
+//        self.emblemSettings{ _, _, _, _, _, _, _ ,in }//        self.emblemSettings.setupImages("emblem", fighterEmblemImageView: fighterEmblemImageView, supportEmblemImageView: supportEmblemImageView, marksmanEmblemImageView: marksmanEmblemImageView, tankEmblemImageView: tankEmblemImageView, jungleEmblemImageView: jungleEmblemImageView, assassinEmblemImageView: assassinEmblemImageView, mageEmblemImageView: mageEmblemImageView)
         // Do any additional setup after loading the view.
     }
 

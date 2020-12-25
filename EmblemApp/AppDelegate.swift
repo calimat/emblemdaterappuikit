@@ -7,13 +7,32 @@
 
 import UIKit
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        guard let rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController() as? ViewController else {
+//                   fatalError("Unable to Instantiate Root View Controller")
+//               }
+//
+        
+       
+//        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let emblemSettings = EmblemSettings().setupImages
+        guard let rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController() as? ViewController else {
+                          fatalError("Unable to Instantiate Root View Controller")
+        }
+        rootViewController.emblemSettings = EmblemSettings().setupImages
+        window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
+        
         return true
     }
 
@@ -29,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+        
     }
 
 
