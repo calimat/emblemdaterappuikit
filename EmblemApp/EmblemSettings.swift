@@ -29,6 +29,8 @@ public class EmblemSettings {
         tankEmblemImageView.addGestureRecognizer(createRecognizer())
         jungleEmblemImageView.isUserInteractionEnabled = true
         jungleEmblemImageView.addGestureRecognizer(createRecognizer())
+        assassinEmblemImageView.isUserInteractionEnabled = true
+        assassinEmblemImageView.addGestureRecognizer(createRecognizer())
         
     }
     
