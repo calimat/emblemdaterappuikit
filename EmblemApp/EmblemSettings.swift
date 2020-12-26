@@ -23,6 +23,10 @@ public class EmblemSettings {
         fighterEmblemImageView.addGestureRecognizer(createRecognizer())
         supportEmblemImageView.isUserInteractionEnabled = true
         supportEmblemImageView.addGestureRecognizer(createRecognizer())
+        marksmanEmblemImageView.isUserInteractionEnabled = true
+        marksmanEmblemImageView.addGestureRecognizer(createRecognizer())
+        tankEmblemImageView.isUserInteractionEnabled = true
+        tankEmblemImageView.addGestureRecognizer(createRecognizer())
         
     }
     

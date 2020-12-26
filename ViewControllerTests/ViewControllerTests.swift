@@ -57,6 +57,10 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
         XCTAssert(sut.supportEmblemImageView.isUserInteractionEnabled)
         XCTAssertEqual(sut.supportEmblemImageView.gestureRecognizers?.count, 1)
+        XCTAssert(sut.marksmanEmblemImageView.isUserInteractionEnabled)
+        XCTAssertEqual(sut.marksmanEmblemImageView.gestureRecognizers?.count, 1)
+        XCTAssert(sut.tankEmblemImageView.isUserInteractionEnabled)
+        XCTAssertEqual(sut.tankEmblemImageView.gestureRecognizers?.count, 1)
     }
     
     class EmblemSettingsSpy: EmblemSettings {
