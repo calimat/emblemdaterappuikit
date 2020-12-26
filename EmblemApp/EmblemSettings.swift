@@ -27,6 +27,8 @@ public class EmblemSettings {
         marksmanEmblemImageView.addGestureRecognizer(createRecognizer())
         tankEmblemImageView.isUserInteractionEnabled = true
         tankEmblemImageView.addGestureRecognizer(createRecognizer())
+        jungleEmblemImageView.isUserInteractionEnabled = true
+        jungleEmblemImageView.addGestureRecognizer(createRecognizer())
         
     }
     
