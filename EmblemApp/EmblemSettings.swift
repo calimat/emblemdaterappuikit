@@ -19,13 +19,15 @@ public class EmblemSettings {
             count += 1
         }
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         fighterEmblemImageView.isUserInteractionEnabled = true
-        fighterEmblemImageView.addGestureRecognizer(tapGestureRecognizer)
+        fighterEmblemImageView.addGestureRecognizer(createRecognizer())
         supportEmblemImageView.isUserInteractionEnabled = true
-        supportEmblemImageView.addGestureRecognizer(tapGestureRecognizer2)
+        supportEmblemImageView.addGestureRecognizer(createRecognizer())
         
+    }
+    
+    private func createRecognizer() -> UIGestureRecognizer {
+        return UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)

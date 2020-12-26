@@ -51,7 +51,7 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.mageEmblemImageView, "Controller has no emblemImageView")
     }
     
-    func testFighterImageviewHasOneTapGestureRecognizer() {
+    func testImageViewsHaveOneTapGestureRecognizer() {
         let sut = makeSUT()
         XCTAssert(sut.fighterEmblemImageView.isUserInteractionEnabled)
         XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
