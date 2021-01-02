@@ -16,22 +16,10 @@ public class EmblemSettings {
         for imageview in imageviews {
             imageview?.image = UIImage(named: name + String(count))
             imageview?.image?.accessibilityIdentifier = name + String(count)
+            imageview?.isUserInteractionEnabled = true
+            imageview?.addGestureRecognizer(createRecognizer())
             count += 1
         }
-        
-        fighterEmblemImageView.isUserInteractionEnabled = true
-        fighterEmblemImageView.addGestureRecognizer(createRecognizer())
-        supportEmblemImageView.isUserInteractionEnabled = true
-        supportEmblemImageView.addGestureRecognizer(createRecognizer())
-        marksmanEmblemImageView.isUserInteractionEnabled = true
-        marksmanEmblemImageView.addGestureRecognizer(createRecognizer())
-        tankEmblemImageView.isUserInteractionEnabled = true
-        tankEmblemImageView.addGestureRecognizer(createRecognizer())
-        jungleEmblemImageView.isUserInteractionEnabled = true
-        jungleEmblemImageView.addGestureRecognizer(createRecognizer())
-        assassinEmblemImageView.isUserInteractionEnabled = true
-        assassinEmblemImageView.addGestureRecognizer(createRecognizer())
-        
     }
     
     private func createRecognizer() -> UIGestureRecognizer {
