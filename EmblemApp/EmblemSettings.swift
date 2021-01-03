@@ -10,10 +10,10 @@ import UIKit
 
 public class EmblemSettings {
     public init() {}
-    public func setupImages(_ name:String, fighterEmblemImageView:UIImageView!, supportEmblemImageView:UIImageView!, marksmanEmblemImageView:UIImageView!, tankEmblemImageView:UIImageView!, jungleEmblemImageView:UIImageView!, assassinEmblemImageView:UIImageView!, mageEmblemImageView:UIImageView! ) {
-        let imageviews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView, tankEmblemImageView, jungleEmblemImageView, assassinEmblemImageView, mageEmblemImageView]
+    public func setupImages(_ name:String, imageViews: [UIImageView?] ) {
+   
         var count = 1
-        for imageview in imageviews {
+        for imageview in imageViews {
             imageview?.image = UIImage(named: name + String(count))
             imageview?.image?.accessibilityIdentifier = name + String(count)
             imageview?.isUserInteractionEnabled = true
