@@ -70,7 +70,7 @@ class ViewControllerTests: XCTestCase {
     
     class EmblemSettingsSpy: EmblemSettings {
         var setImageCallCount = 0
-        override func setupImages(_ name: String, imageViews:[UIImageView?]) {
+        override func setupImages(imageViews:[UIImageView?]) {
             setImageCallCount = 1
         }
         

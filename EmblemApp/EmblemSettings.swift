@@ -10,8 +10,8 @@ import UIKit
 
 public class EmblemSettings {
     public init() {}
-    public func setupImages(_ name:String, imageViews: [UIImageView?] ) {
-   
+    public func setupImages(imageViews: [UIImageView?] ) {
+        let name = "emblem"
         var count = 1
         for imageview in imageViews {
             imageview?.image = UIImage(named: name + String(count))

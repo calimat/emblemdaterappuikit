@@ -13,13 +13,12 @@ class EmblemSettingsTests: XCTestCase {
     
     func testcontrollerFighterUIImageViewHasTheCorrectImageWhichIsEmblem01() {
         
-        let filename = "emblem"
         let sut = EmblemSettings()
     
         
         let imageViews = [UIImageView(),UIImageView(),UIImageView(),UIImageView(),UIImageView(),UIImageView(),UIImageView()]
         
-        sut.setupImages(filename, imageViews: imageViews  )
+        sut.setupImages(imageViews: imageViews  )
         XCTAssertNotNil(imageViews[0].image, "UIImageView in Controller doesnt have the image")
         XCTAssertEqual(imageViews[0].image?.accessibilityIdentifier, "emblem1")
         XCTAssertNotNil(imageViews[1].image, "UIImageView in Controller doesnt have the image")
