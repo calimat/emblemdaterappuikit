@@ -15,11 +15,19 @@
 		F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6522533AC5800911F61 /* Assets.xcassets */; };
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
 		F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */; };
+		F680761A25AA7CCE000DDBFD /* EmblemFileMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */; };
 		F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F66EE67E2533B1E800911F61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66EE63E2533AC5500911F61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F66EE6452533AC5500911F61;
+			remoteInfo = EmblemApp;
+		};
+		F680761C25AA7CCE000DDBFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F66EE63E2533AC5500911F61 /* Project object */;
 			proxyType = 1;
@@ -41,6 +49,9 @@
 		F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmblemFileMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemFileMapperTests.swift; sourceTree = "<group>"; };
+		F680761B25AA7CCE000DDBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemSettingsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F680761425AA7CCE000DDBFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +85,7 @@
 			children = (
 				F66EE6482533AC5500911F61 /* EmblemApp */,
 				F66EE67A2533B1E800911F61 /* ViewControllerTests */,
+				F680761825AA7CCE000DDBFD /* EmblemFileMapperTests */,
 				F66EE6472533AC5500911F61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +95,7 @@
 			children = (
 				F66EE6462533AC5500911F61 /* EmblemApp.app */,
 				F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */,
+				F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +123,15 @@
 				F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */,
 			);
 			path = ViewControllerTests;
+			sourceTree = "<group>";
+		};
+		F680761825AA7CCE000DDBFD /* EmblemFileMapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */,
+				F680761B25AA7CCE000DDBFD /* Info.plist */,
+			);
+			path = EmblemFileMapperTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,13 +172,31 @@
 			productReference = F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F680761625AA7CCE000DDBFD /* EmblemFileMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F680762025AA7CCE000DDBFD /* Build configuration list for PBXNativeTarget "EmblemFileMapperTests" */;
+			buildPhases = (
+				F680761325AA7CCE000DDBFD /* Sources */,
+				F680761425AA7CCE000DDBFD /* Frameworks */,
+				F680761525AA7CCE000DDBFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F680761D25AA7CCE000DDBFD /* PBXTargetDependency */,
+			);
+			name = EmblemFileMapperTests;
+			productName = EmblemFileMapperTests;
+			productReference = F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F66EE63E2533AC5500911F61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					F66EE6452533AC5500911F61 = {
@@ -157,6 +204,10 @@
 					};
 					F66EE6782533B1E800911F61 = {
 						CreatedOnToolsVersion = 12.0;
+						TestTargetID = F66EE6452533AC5500911F61;
+					};
+					F680761625AA7CCE000DDBFD = {
+						CreatedOnToolsVersion = 12.3;
 						TestTargetID = F66EE6452533AC5500911F61;
 					};
 				};
@@ -176,6 +227,7 @@
 			targets = (
 				F66EE6452533AC5500911F61 /* EmblemApp */,
 				F66EE6782533B1E800911F61 /* ViewControllerTests */,
+				F680761625AA7CCE000DDBFD /* EmblemFileMapperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +244,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F66EE6772533B1E800911F61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F680761525AA7CCE000DDBFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,6 +280,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F680761325AA7CCE000DDBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F680761A25AA7CCE000DDBFD /* EmblemFileMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,6 +295,11 @@
 			isa = PBXTargetDependency;
 			target = F66EE6452533AC5500911F61 /* EmblemApp */;
 			targetProxy = F66EE67E2533B1E800911F61 /* PBXContainerItemProxy */;
+		};
+		F680761D25AA7CCE000DDBFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F66EE6452533AC5500911F61 /* EmblemApp */;
+			targetProxy = F680761C25AA7CCE000DDBFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +517,48 @@
 			};
 			name = Release;
 		};
+		F680761E25AA7CCE000DDBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AMLYNCKP6M;
+				INFOPLIST_FILE = EmblemFileMapperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.petitcoding.EmblemFileMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmblemApp.app/EmblemApp";
+			};
+			name = Debug;
+		};
+		F680761F25AA7CCE000DDBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AMLYNCKP6M;
+				INFOPLIST_FILE = EmblemFileMapperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.petitcoding.EmblemFileMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmblemApp.app/EmblemApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +585,15 @@
 			buildConfigurations = (
 				F66EE6802533B1E800911F61 /* Debug */,
 				F66EE6812533B1E800911F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F680762025AA7CCE000DDBFD /* Build configuration list for PBXNativeTarget "EmblemFileMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F680761E25AA7CCE000DDBFD /* Debug */,
+				F680761F25AA7CCE000DDBFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
