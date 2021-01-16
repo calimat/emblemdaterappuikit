@@ -13,7 +13,12 @@ class EmblemMapper {
         {
             return "Fighter"
         }
-        return "Support"
+        
+        if(filename == "emblem2") {
+            return "Support"
+        }
+        
+        return "Marksman"
     }
 }
 
@@ -33,6 +38,14 @@ class EmblemFileMapperTests: XCTestCase {
         let emblemName = sut.map("emblem2")
         
         XCTAssertEqual(emblemName, "Support")
+    }
+    
+    func test_map_Emblem3FileNameMapstoMarksman() {
+        let sut = EmblemMapper()
+        
+        let emblemName = sut.map("emblem3")
+        
+        XCTAssertEqual(emblemName, "Marksman")
     }
 
 }
