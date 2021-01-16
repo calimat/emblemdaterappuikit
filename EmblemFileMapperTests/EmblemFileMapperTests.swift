@@ -9,21 +9,20 @@ import XCTest
 
 class EmblemMapper {
     func map(_ filename:String) -> String? {
-        if(filename == "emblem1")
-        {
-            return "Fighter"
+        let name = "emblem"
+        var returnedEmblem:String? = nil
+        let emblems = ["Fighter", "Support", "Marksman"]
+        var count = 1
+        
+        for emblem in emblems {
+            let resultFileName = "\(name)\(count)"
+            if(resultFileName == filename) {
+                returnedEmblem = emblem
+            }
+            count = count + 1
         }
         
-        if(filename == "emblem2") {
-            return "Support"
-        }
-        
-        if(filename == "emblem3")
-        {
-            return "Marksman"
-        }
-        
-        return nil
+        return returnedEmblem
     }
 }
 
