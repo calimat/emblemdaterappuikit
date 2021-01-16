@@ -15,7 +15,7 @@ class EmblemMapper {
 
 class EmblemFileMapperTests: XCTestCase {
 
-    func test_makesureThatEmblem1FileNameMapstoFighter() {
+    func test_map_Emblem1FileNameMapstoFighter() {
         let sut = EmblemMapper()
         
         let emblemName = sut.map("emblem1")
