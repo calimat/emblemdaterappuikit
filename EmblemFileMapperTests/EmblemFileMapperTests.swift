@@ -8,7 +8,7 @@
 import XCTest
 
 class EmblemMapper {
-    func map(_ filename:String) -> String {
+    func map(_ filename:String) -> String? {
         if(filename == "emblem1")
         {
             return "Fighter"
@@ -18,7 +18,12 @@ class EmblemMapper {
             return "Support"
         }
         
-        return "Marksman"
+        if(filename == "emblem3")
+        {
+            return "Marksman"
+        }
+        
+        return nil
     }
 }
 
@@ -46,6 +51,15 @@ class EmblemFileMapperTests: XCTestCase {
         let emblemName = sut.map("emblem3")
         
         XCTAssertEqual(emblemName, "Marksman")
+    }
+    
+    
+    func test_map_AnyOtherFileNameMapstoNil() {
+        let sut = EmblemMapper()
+        
+        let emblemName = sut.map("anyFileName")
+        
+        XCTAssertNil(emblemName)
     }
 
 }
