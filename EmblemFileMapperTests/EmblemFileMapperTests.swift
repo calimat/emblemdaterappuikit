@@ -6,25 +6,8 @@
 //
 
 import XCTest
+import EmblemApp
 
-class EmblemMapper {
-    func map(_ filename:String) -> String? {
-        let name = "emblem"
-        var returnedEmblem:String? = nil
-        let emblems = ["Fighter", "Support", "Marksman"]
-        var count = 1
-        
-        for emblem in emblems {
-            let resultFileName = "\(name)\(count)"
-            if(resultFileName == filename) {
-                returnedEmblem = emblem
-            }
-            count = count + 1
-        }
-        
-        return returnedEmblem
-    }
-}
 
 class EmblemFileMapperTests: XCTestCase {
 

@@ -16,6 +16,7 @@
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
 		F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */; };
 		F680761A25AA7CCE000DDBFD /* EmblemFileMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */; };
+		F6B839A825B3645A0040DF6E /* EmblemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B839A725B3645A0040DF6E /* EmblemMapper.swift */; };
 		F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmblemFileMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemFileMapperTests.swift; sourceTree = "<group>"; };
 		F680761B25AA7CCE000DDBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B839A725B3645A0040DF6E /* EmblemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemMapper.swift; sourceTree = "<group>"; };
 		F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemSettingsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */,
 				F66EE6572533AC5800911F61 /* Info.plist */,
 				F62C75592572E1D300956010 /* EmblemSettings.swift */,
+				F6B839A725B3645A0040DF6E /* EmblemMapper.swift */,
 			);
 			path = EmblemApp;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				F66EE64E2533AC5500911F61 /* ViewController.swift in Sources */,
 				F66EE64A2533AC5500911F61 /* AppDelegate.swift in Sources */,
+				F6B839A825B3645A0040DF6E /* EmblemMapper.swift in Sources */,
 				F62C755A2572E1D300956010 /* EmblemSettings.swift in Sources */,
 				F66EE64C2533AC5500911F61 /* SceneDelegate.swift in Sources */,
 			);
