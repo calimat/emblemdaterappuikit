@@ -12,7 +12,7 @@ public class EmblemMapper {
     public func map(_ filename:String) -> String? {
         let name = "emblem"
         var returnedEmblem:String? = nil
-        let emblems = ["Fighter", "Support", "Marksman", "Tank"]
+        let emblems = ["Fighter", "Support", "Marksman", "Tank", "Jungle"]
         var count = 1
         
         for emblem in emblems {

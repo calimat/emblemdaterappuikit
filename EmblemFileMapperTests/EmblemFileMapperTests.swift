@@ -35,12 +35,20 @@ class EmblemFileMapperTests: XCTestCase {
         XCTAssertEqual(emblemName, "Marksman")
     }
     
-    func test_map_Emblem4FileNameMapstoMarksman() {
+    func test_map_Emblem4FileNameMapstoTank() {
         let sut = EmblemMapper()
         
         let emblemName = sut.map("emblem4")
         
         XCTAssertEqual(emblemName, "Tank")
+    }
+    
+    func test_map_Emblem4FileNameMapstoJungle() {
+        let sut = EmblemMapper()
+        
+        let emblemName = sut.map("emblem5")
+        
+        XCTAssertEqual(emblemName, "Jungle")
     }
     
     
