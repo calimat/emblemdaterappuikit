@@ -26,9 +26,9 @@ class EmblemViewController: UIViewController {
     
     @IBOutlet weak var mageEmblemImageView:UIImageView!
     
-    var emblemSettings:EmblemSettings = EmblemSettings()
+    var emblemSettings:Settings = EmblemSettings()
     
-    convenience init(emblemSettings:EmblemSettings) {
+    convenience init(emblemSettings:Settings) {
         self.init()
         self.emblemSettings = emblemSettings
     }
