@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EmblemViewController: UIViewController {
 
     @IBOutlet weak var fighterEmblemImageView:UIImageView!
     

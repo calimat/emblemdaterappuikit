@@ -8,10 +8,10 @@
 import XCTest
 @testable import EmblemApp
 
-class ViewControllerTests: XCTestCase {
+class EmblemViewControllerTests: XCTestCase {
     
-    func makeSUT() -> ViewController {
-        let sut = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateInitialViewController() as! ViewController
+    func makeSUT() -> EmblemViewController {
+        let sut = UIStoryboard(name: "Main", bundle: Bundle(for: EmblemViewController.self)).instantiateInitialViewController() as! EmblemViewController
         sut.loadViewIfNeeded()
         return sut
     }
@@ -78,7 +78,7 @@ class ViewControllerTests: XCTestCase {
     
     func testcontrollercallsEmblemSettingsFunctionOnViewDidLoad() {
         let spy = EmblemSettingsSpy()
-        let sut = ViewController(emblemSettings: spy)
+        let sut = EmblemViewController(emblemSettings: spy)
         sut.viewDidLoad()
         XCTAssertEqual(spy.setImageCallCount, 1)
         

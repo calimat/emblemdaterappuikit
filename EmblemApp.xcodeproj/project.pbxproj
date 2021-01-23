@@ -10,11 +10,11 @@
 		F62C755A2572E1D300956010 /* EmblemSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62C75592572E1D300956010 /* EmblemSettings.swift */; };
 		F66EE64A2533AC5500911F61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE6492533AC5500911F61 /* AppDelegate.swift */; };
 		F66EE64C2533AC5500911F61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE64B2533AC5500911F61 /* SceneDelegate.swift */; };
-		F66EE64E2533AC5500911F61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE64D2533AC5500911F61 /* ViewController.swift */; };
+		F66EE64E2533AC5500911F61 /* EmblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE64D2533AC5500911F61 /* EmblemViewController.swift */; };
 		F66EE6512533AC5500911F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE64F2533AC5500911F61 /* Main.storyboard */; };
 		F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6522533AC5800911F61 /* Assets.xcassets */; };
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
-		F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */; };
+		F66EE67C2533B1E800911F61 /* EmblemViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */; };
 		F680761A25AA7CCE000DDBFD /* EmblemFileMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */; };
 		F6B839A825B3645A0040DF6E /* EmblemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B839A725B3645A0040DF6E /* EmblemMapper.swift */; };
 		F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */; };
@@ -42,13 +42,13 @@
 		F66EE6462533AC5500911F61 /* EmblemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmblemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66EE6492533AC5500911F61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66EE64B2533AC5500911F61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F66EE64D2533AC5500911F61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F66EE64D2533AC5500911F61 /* EmblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemViewController.swift; sourceTree = "<group>"; };
 		F66EE6502533AC5500911F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F66EE6522533AC5800911F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F66EE6552533AC5800911F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66EE6572533AC5800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66EE6792533B1E800911F61 /* ViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemViewControllerTests.swift; sourceTree = "<group>"; };
 		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmblemFileMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680761925AA7CCE000DDBFD /* EmblemFileMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemFileMapperTests.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			children = (
 				F66EE6492533AC5500911F61 /* AppDelegate.swift */,
 				F66EE64B2533AC5500911F61 /* SceneDelegate.swift */,
-				F66EE64D2533AC5500911F61 /* ViewController.swift */,
+				F66EE64D2533AC5500911F61 /* EmblemViewController.swift */,
 				F66EE64F2533AC5500911F61 /* Main.storyboard */,
 				F66EE6522533AC5800911F61 /* Assets.xcassets */,
 				F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */,
@@ -121,7 +121,7 @@
 		F66EE67A2533B1E800911F61 /* ViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F66EE67B2533B1E800911F61 /* ViewControllerTests.swift */,
+				F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */,
 				F66EE67D2533B1E800911F61 /* Info.plist */,
 				F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */,
 			);
@@ -267,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F66EE64E2533AC5500911F61 /* ViewController.swift in Sources */,
+				F66EE64E2533AC5500911F61 /* EmblemViewController.swift in Sources */,
 				F66EE64A2533AC5500911F61 /* AppDelegate.swift in Sources */,
 				F6B839A825B3645A0040DF6E /* EmblemMapper.swift in Sources */,
 				F62C755A2572E1D300956010 /* EmblemSettings.swift in Sources */,
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */,
-				F66EE67C2533B1E800911F61 /* ViewControllerTests.swift in Sources */,
+				F66EE67C2533B1E800911F61 /* EmblemViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
