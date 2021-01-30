@@ -8,7 +8,6 @@
 import XCTest
 import EmblemApp
 
-
 class EmblemFileMapperTests: XCTestCase {
 
     func test_map_Emblem1FileNameMapstoFighter() {

@@ -19,6 +19,8 @@
 		F6B4F12425BCA4CB0047FBAF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B4F12325BCA4CB0047FBAF /* Settings.swift */; };
 		F6B839A825B3645A0040DF6E /* EmblemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B839A725B3645A0040DF6E /* EmblemMapper.swift */; };
 		F6C5D6EE257C11EE00E9FE0B /* EmblemSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */; };
+		F6F5252925C5EC3D0090FFEA /* EmblemDateCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; };
+		F6F5252A25C5EC3D0090FFEA /* EmblemDateCalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,20 @@
 			remoteInfo = EmblemApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6F5252B25C5EC3D0090FFEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6F5252A25C5EC3D0090FFEA /* EmblemDateCalculator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F62C75592572E1D300956010 /* EmblemSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemSettings.swift; sourceTree = "<group>"; };
@@ -57,6 +73,7 @@
 		F6B4F12325BCA4CB0047FBAF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F6B839A725B3645A0040DF6E /* EmblemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemMapper.swift; sourceTree = "<group>"; };
 		F6C5D6ED257C11EE00E9FE0B /* EmblemSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemSettingsTests.swift; sourceTree = "<group>"; };
+		F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EmblemDateCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F5252925C5EC3D0090FFEA /* EmblemDateCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,7 @@
 				F66EE67A2533B1E800911F61 /* ViewControllerTests */,
 				F680761825AA7CCE000DDBFD /* EmblemFileMapperTests */,
 				F66EE6472533AC5500911F61 /* Products */,
+				F6F5252725C5EC3D0090FFEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +167,14 @@
 			path = Protcols;
 			sourceTree = "<group>";
 		};
+		F6F5252725C5EC3D0090FFEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +185,7 @@
 				F66EE6422533AC5500911F61 /* Sources */,
 				F66EE6432533AC5500911F61 /* Frameworks */,
 				F66EE6442533AC5500911F61 /* Resources */,
+				F6F5252B25C5EC3D0090FFEA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
