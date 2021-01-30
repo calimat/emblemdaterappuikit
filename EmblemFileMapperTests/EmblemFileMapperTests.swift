@@ -11,67 +11,75 @@ import EmblemApp
 class EmblemFileMapperTests: XCTestCase {
 
     func test_map_Emblem1FileNameMapstoFighter() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem1")
         
-        XCTAssertEqual(emblemName, "Fighter")
+        XCTAssertEqual(emblemName, emblems[0])
     }
     
     func test_map_Emblem2FileNameMapstoSupport() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem2")
         
-        XCTAssertEqual(emblemName, "Support")
+        XCTAssertEqual(emblemName, emblems[1])
     }
     
     func test_map_Emblem3FileNameMapstoMarksman() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem3")
         
-        XCTAssertEqual(emblemName, "Marksman")
+        XCTAssertEqual(emblemName, emblems[2])
     }
     
     func test_map_Emblem4FileNameMapstoTank() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem4")
         
-        XCTAssertEqual(emblemName, "Tank")
+        XCTAssertEqual(emblemName, emblems[3])
     }
     
     func test_map_Emblem5FileNameMapstoJungle() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem5")
         
-        XCTAssertEqual(emblemName, "Jungle")
+        XCTAssertEqual(emblemName, emblems[4])
     }
     
     func test_map_Emblem6FileNameMapstoAssasin() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem6")
         
-        XCTAssertEqual(emblemName, "Assassin")
+        XCTAssertEqual(emblemName, emblems[5])
     }
     
     func test_map_Emblem7FileNameMapstoMage() {
-        let sut = EmblemMapper()
+        let (sut, emblems) = makeSUT()
         
         let emblemName = sut.map("emblem7")
         
-        XCTAssertEqual(emblemName, "Mage")
+        XCTAssertEqual(emblemName, emblems[6])
     }
     
     func test_map_AnyOtherFileNameMapstoNil() {
-        let sut = EmblemMapper()
+        let (sut, _) = makeSUT()
         
         let emblemName = sut.map("anyFileName")
         
         XCTAssertNil(emblemName)
+    }
+    
+    //MARK: - Helpers
+    
+    func makeSUT() -> (sut: EmblemMapper, emblems: [String]) {
+        let emblems = ["Fighter", "Support", "Marksman", "Tank", "Jungle", "Assassin", "Mage"]
+        let sut = EmblemMapper(emblems: emblems)
+        return (sut, emblems)
     }
 
 }

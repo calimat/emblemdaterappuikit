@@ -8,11 +8,15 @@
 import Foundation
 
 public class EmblemMapper {
-    public init() {}
+    private let emblems: [String]
+    
+    public init(emblems: [String]) {
+        self.emblems = emblems
+    }
+    
     public func map(_ filename:String) -> String? {
         let name = "emblem"
         var returnedEmblem:String? = nil
-        let emblems = ["Fighter", "Support", "Marksman", "Tank", "Jungle", "Assassin", "Mage"]
         var count = 1
         
         for emblem in emblems {
