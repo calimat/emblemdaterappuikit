@@ -7,6 +7,7 @@
 
 import XCTest
 import EmblemApp
+import EmblemDateCalculator
 
 class EmblemFileMapperTests: XCTestCase {
 
@@ -76,8 +77,8 @@ class EmblemFileMapperTests: XCTestCase {
     
     //MARK: - Helpers
     
-    func makeSUT() -> (sut: EmblemMapper, emblems: [String]) {
-        let emblems = ["Fighter", "Support", "Marksman", "Tank", "Jungle", "Assassin", "Mage"]
+    func makeSUT() -> (sut: EmblemMapper, emblems: [Emblem]) {
+        let emblems = Emblem.allCases
         let sut = EmblemMapper(emblems: emblems)
         return (sut, emblems)
     }

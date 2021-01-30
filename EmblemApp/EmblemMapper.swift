@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import EmblemDateCalculator
 
 public class EmblemMapper {
-    private let emblems: [String]
+    private let emblems: [Emblem]
     
-    public init(emblems: [String]) {
+    public init(emblems: [Emblem]) {
         self.emblems = emblems
     }
     
-    public func map(_ filename:String) -> String? {
+    public func map(_ filename:String) -> Emblem? {
         let name = "emblem"
-        var returnedEmblem:String? = nil
+        var returnedEmblem:Emblem? = nil
         var count = 1
         
         for emblem in emblems {
