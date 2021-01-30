@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-protocol Settings {
-    func setupImages(imageViews: [UIImageView?] )
-}
-
 public class EmblemSettings:Settings {
     public init() {}
     public func setupImages(imageViews: [UIImageView?] ) {
