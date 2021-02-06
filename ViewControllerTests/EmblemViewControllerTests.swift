@@ -10,12 +10,6 @@ import XCTest
 
 class EmblemViewControllerTests: XCTestCase {
     
-    func makeSUT() -> EmblemViewController {
-        let sut = UIStoryboard(name: "Main", bundle: Bundle(for: EmblemViewController.self)).instantiateInitialViewController() as! EmblemViewController
-        sut.loadViewIfNeeded()
-        return sut
-    }
-
     func testcontrollerhasFighterUIImageView() {
         let sut = makeSUT()
         XCTAssertNotNil(sut.fighterEmblemImageView, "Controller has no emblemImageView")
@@ -84,6 +78,14 @@ class EmblemViewControllerTests: XCTestCase {
         
     }
     
+    //MARK: - Helpers
+    
+    func makeSUT() -> EmblemViewController {
+        let bundle = Bundle(for: EmblemViewController.self)
+        let sut = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
+        sut.loadViewIfNeeded()
+        return sut
+    }
     
     
 }
