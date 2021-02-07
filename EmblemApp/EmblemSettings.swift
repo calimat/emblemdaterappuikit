@@ -26,7 +26,7 @@ public class EmblemSettings:Settings {
         return UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
     }
     
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    @IBAction func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
         //let tappedImage = tapGestureRecognizer.view as! UIImageView
 

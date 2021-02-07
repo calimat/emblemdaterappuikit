@@ -11,53 +11,69 @@ import XCTest
 class EmblemViewControllerTests: XCTestCase {
     
     func testcontrollerhasFighterUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.fighterEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasSupportUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.supportEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasMarksManUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.marksmanEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasTankUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.tankEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasJungleUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.jungleEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasAssassinUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.assassinEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasMageUIImageView() {
-        let sut = makeSUT()
+        let (sut, _) = makeSUT()
         XCTAssertNotNil(sut.mageEmblemImageView, "Controller has no emblemImageView")
     }
     
-    func testImageViewsHaveOneTapGestureRecognizer() {
-        let sut = makeSUT()
+    func testImageViews_loadView_AreUserIneractionEnabled() {
+        let (sut, _) = makeSUT()
+        
         XCTAssert(sut.fighterEmblemImageView.isUserInteractionEnabled)
-        XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
+        
         XCTAssert(sut.supportEmblemImageView.isUserInteractionEnabled)
-        XCTAssertEqual(sut.supportEmblemImageView.gestureRecognizers?.count, 1)
+        
         XCTAssert(sut.marksmanEmblemImageView.isUserInteractionEnabled)
-        XCTAssertEqual(sut.marksmanEmblemImageView.gestureRecognizers?.count, 1)
+        
         XCTAssert(sut.tankEmblemImageView.isUserInteractionEnabled)
-        XCTAssertEqual(sut.tankEmblemImageView.gestureRecognizers?.count, 1)
+        
         XCTAssert(sut.jungleEmblemImageView.isUserInteractionEnabled)
-        XCTAssertEqual(sut.jungleEmblemImageView.gestureRecognizers?.count, 1)
+        
         XCTAssert(sut.assassinEmblemImageView.isUserInteractionEnabled)
+    }
+    
+    func testImage_loadView_ViewsHaveOneTapGestureRecognizer() {
+        let (sut, _) = makeSUT()
+       
+        XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
+       
+        XCTAssertEqual(sut.supportEmblemImageView.gestureRecognizers?.count, 1)
+        
+        XCTAssertEqual(sut.marksmanEmblemImageView.gestureRecognizers?.count, 1)
+       
+        XCTAssertEqual(sut.tankEmblemImageView.gestureRecognizers?.count, 1)
+        
+        XCTAssertEqual(sut.jungleEmblemImageView.gestureRecognizers?.count, 1)
+        
         XCTAssertEqual(sut.assassinEmblemImageView.gestureRecognizers?.count, 1)
         
     }
@@ -71,20 +87,21 @@ class EmblemViewControllerTests: XCTestCase {
     }
     
     func testcontrollercallsEmblemSettingsFunctionOnViewDidLoad() {
-        let spy = EmblemSettingsSpy()
-        let sut = EmblemViewController(emblemSettings: spy)
+        let (sut, settingsSpy) = makeSUT()
         sut.viewDidLoad()
-        XCTAssertEqual(spy.setImageCallCount, 1)
+        XCTAssertEqual(settingsSpy.setImageCallCount, 1)
         
     }
     
     //MARK: - Helpers
     
-    func makeSUT() -> EmblemViewController {
+    func makeSUT() -> (EmblemViewController, EmblemSettingsSpy) {
+        let settingsSpy = EmblemSettingsSpy()
         let bundle = Bundle(for: EmblemViewController.self)
         let sut = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
+        sut.emblemSettings = settingsSpy
         sut.loadViewIfNeeded()
-        return sut
+        return (sut, settingsSpy)
     }
     
     
