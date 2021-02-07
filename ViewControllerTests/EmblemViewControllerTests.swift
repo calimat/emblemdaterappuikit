@@ -12,41 +12,64 @@ class EmblemViewControllerTests: XCTestCase {
     
     func testcontrollerhasFighterUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.fighterEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasSupportUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.supportEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasMarksManUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.marksmanEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasTankUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.tankEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasJungleUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.jungleEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasAssassinUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.assassinEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testcontrollerhasMageUIImageView() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.mageEmblemImageView, "Controller has no emblemImageView")
     }
     
     func testImageViews_loadView_AreUserIneractionEnabled() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
         
         XCTAssert(sut.fighterEmblemImageView.isUserInteractionEnabled)
         
@@ -63,6 +86,8 @@ class EmblemViewControllerTests: XCTestCase {
     
     func testImage_loadView_ViewsHaveOneTapGestureRecognizer() {
         let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
        
         XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
        
@@ -88,7 +113,7 @@ class EmblemViewControllerTests: XCTestCase {
     
     func testcontrollercallsEmblemSettingsFunctionOnViewDidLoad() {
         let (sut, settingsSpy) = makeSUT()
-        sut.viewDidLoad()
+        sut.loadViewIfNeeded()
         XCTAssertEqual(settingsSpy.setImageCallCount, 1)
         
     }
@@ -100,7 +125,6 @@ class EmblemViewControllerTests: XCTestCase {
         let bundle = Bundle(for: EmblemViewController.self)
         let sut = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
         sut.emblemSettings = settingsSpy
-        sut.loadViewIfNeeded()
         return (sut, settingsSpy)
     }
     
