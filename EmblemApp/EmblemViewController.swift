@@ -9,7 +9,7 @@ import UIKit
 
 class EmblemViewController: UIViewController {
 
-    @IBOutlet weak var fighterEmblemImageView:UIImageView!
+    @IBOutlet weak var fighterEmblemButton:UIButton!
     
     @IBOutlet weak var supportEmblemImageView:UIImageView!
     
@@ -35,8 +35,8 @@ class EmblemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageViews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView, tankEmblemImageView, jungleEmblemImageView, assassinEmblemImageView, mageEmblemImageView]
-        self.emblemSettings.setupImages(imageViews: imageViews)
+        //let imageViews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView, tankEmblemImageView, jungleEmblemImageView, assassinEmblemImageView, mageEmblemImageView]
+       // self.emblemSettings.setupImages(imageViews: imageViews)
         // Do any additional setup after loading the view.
     }
 

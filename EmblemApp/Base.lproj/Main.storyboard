@@ -22,17 +22,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-fn-SNx">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="180"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Vg-c6-wU3">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-QU-HxC">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
-                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="jpy-B0-Srv"/>
-                                                    <constraint firstAttribute="width" constant="180" id="xts-Yz-cnA"/>
+                                                    <constraint firstAttribute="height" constant="180" id="73r-Ni-KQz"/>
+                                                    <constraint firstAttribute="width" constant="180" id="hun-ua-QCU"/>
                                                 </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="fKe-Lu-epF" appends="YES" id="HK6-V0-aAO"/>
-                                                </connections>
-                                            </imageView>
+                                                <state key="normal" title="Button" image="emblem1"/>
+                                            </button>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hjh-X8-F7l">
                                                 <rect key="frame" x="185" y="0.0" width="180" height="180"/>
                                                 <gestureRecognizers/>
@@ -123,7 +120,7 @@
                     </view>
                     <connections>
                         <outlet property="assassinEmblemImageView" destination="u7e-rn-nWL" id="Q1N-JZ-ypa"/>
-                        <outlet property="fighterEmblemImageView" destination="3Vg-c6-wU3" id="Gxg-Af-tZh"/>
+                        <outlet property="fighterEmblemButton" destination="f6a-QU-HxC" id="Twr-tU-4rw"/>
                         <outlet property="jungleEmblemImageView" destination="QAW-5W-O1N" id="ScU-UA-H4N"/>
                         <outlet property="mageEmblemImageView" destination="wID-pO-n7T" id="gZg-By-5Ou"/>
                         <outlet property="marksmanEmblemImageView" destination="Ddx-vn-6Jm" id="vVk-Z4-2tI"/>
@@ -172,6 +169,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="emblem1" width="910" height="1097"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
