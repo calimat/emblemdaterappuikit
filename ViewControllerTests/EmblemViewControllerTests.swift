@@ -15,7 +15,7 @@ class EmblemViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertNotNil(sut.fighterEmblemButton, "Controller has no emblemButton")
+        XCTAssertNotNil(sut.fighterEmblemButton, "Controller has no fighter emblem button")
     }
     
     func testcontrollerhasSupportUIImageView() {
@@ -23,7 +23,7 @@ class EmblemViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertNotNil(sut.supportEmblemImageView, "Controller has no emblemImageView")
+        XCTAssertNotNil(sut.supportEmblemButton, "Controller has no support emblem button")
     }
     
     func testcontrollerhasMarksManUIImageView() {
@@ -70,11 +70,7 @@ class EmblemViewControllerTests: XCTestCase {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
-        
-//        XCTAssert(sut.fighterEmblemImageView.isUserInteractionEnabled)
-        
-        XCTAssert(sut.supportEmblemImageView.isUserInteractionEnabled)
-        
+
         XCTAssert(sut.marksmanEmblemImageView.isUserInteractionEnabled)
         
         XCTAssert(sut.tankEmblemImageView.isUserInteractionEnabled)
@@ -88,10 +84,7 @@ class EmblemViewControllerTests: XCTestCase {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
-       
-  //      XCTAssertEqual(sut.fighterEmblemImageView.gestureRecognizers?.count, 1)
-       
-        XCTAssertEqual(sut.supportEmblemImageView.gestureRecognizers?.count, 1)
+    
         
         XCTAssertEqual(sut.marksmanEmblemImageView.gestureRecognizers?.count, 1)
        
@@ -115,9 +108,9 @@ class EmblemViewControllerTests: XCTestCase {
 //        let (sut, settingsSpy) = makeSUT()
 //        sut.loadViewIfNeeded()
 //        XCTAssertEqual(settingsSpy.setImageCallCount, 1)
-//        
+//
 //    }
-//    
+//
     //MARK: - Helpers
     
     func makeSUT() -> (EmblemViewController, EmblemSettingsSpy) {

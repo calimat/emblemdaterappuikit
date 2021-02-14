@@ -11,7 +11,7 @@ class EmblemViewController: UIViewController {
 
     @IBOutlet weak var fighterEmblemButton:UIButton!
     
-    @IBOutlet weak var supportEmblemImageView:UIImageView!
+    @IBOutlet weak var supportEmblemButton:UIButton!
     
     @IBOutlet weak var
         marksmanEmblemImageView:UIImageView!

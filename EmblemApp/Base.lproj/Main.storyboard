@@ -30,17 +30,14 @@
                                                 </constraints>
                                                 <state key="normal" title="Button" image="emblem1"/>
                                             </button>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hjh-X8-F7l">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPz-tb-Rol">
                                                 <rect key="frame" x="185" y="0.0" width="180" height="180"/>
-                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="55c-hX-Oyf"/>
-                                                    <constraint firstAttribute="width" constant="180" id="gqS-Pv-9Vs"/>
+                                                    <constraint firstAttribute="height" constant="180" id="svv-s7-ShG"/>
+                                                    <constraint firstAttribute="width" constant="180" id="y9W-Ra-CMC"/>
                                                 </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="nnH-Gt-Nq8" appends="YES" id="HNM-Of-y3P"/>
-                                                </connections>
-                                            </imageView>
+                                                <state key="normal" title="Button" image="emblem2"/>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xI-5bJ">
@@ -124,7 +121,7 @@
                         <outlet property="jungleEmblemImageView" destination="QAW-5W-O1N" id="ScU-UA-H4N"/>
                         <outlet property="mageEmblemImageView" destination="wID-pO-n7T" id="gZg-By-5Ou"/>
                         <outlet property="marksmanEmblemImageView" destination="Ddx-vn-6Jm" id="vVk-Z4-2tI"/>
-                        <outlet property="supportEmblemImageView" destination="hjh-X8-F7l" id="EWG-z2-hxV"/>
+                        <outlet property="supportEmblemButton" destination="DPz-tb-Rol" id="X8g-p3-d9x"/>
                         <outlet property="tankEmblemImageView" destination="6Hn-1m-HKi" id="vLM-nu-URe"/>
                     </connections>
                 </viewController>
@@ -170,6 +167,7 @@
     </scenes>
     <resources>
         <image name="emblem1" width="910" height="1097"/>
+        <image name="emblem2" width="798" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
