@@ -35,9 +35,6 @@ class EmblemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let imageViews = [fighterEmblemImageView, supportEmblemImageView, marksmanEmblemImageView, tankEmblemImageView, jungleEmblemImageView, assassinEmblemImageView, mageEmblemImageView]
-       // self.emblemSettings.setupImages(imageViews: imageViews)
-        // Do any additional setup after loading the view.
     }
 
     
