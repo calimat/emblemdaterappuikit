@@ -48,13 +48,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="177.5" height="180"/>
                                                 <state key="normal" title="Button" image="emblem3"/>
                                             </button>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Hn-1m-HKi">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmv-4s-Y5V">
                                                 <rect key="frame" x="182.5" y="0.0" width="177.5" height="180"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="czJ-Vl-cN7" appends="YES" id="4t9-D8-S1l"/>
-                                                </connections>
-                                            </imageView>
+                                                <state key="normal" title="Button" image="emblem4"/>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NPf-fG-SeW">
@@ -113,7 +110,7 @@
                         <outlet property="mageEmblemImageView" destination="wID-pO-n7T" id="gZg-By-5Ou"/>
                         <outlet property="marksmanEmblemButton" destination="U00-4b-zxH" id="FJk-Y6-chb"/>
                         <outlet property="supportEmblemButton" destination="DPz-tb-Rol" id="X8g-p3-d9x"/>
-                        <outlet property="tankEmblemImageView" destination="6Hn-1m-HKi" id="vLM-nu-URe"/>
+                        <outlet property="tankEmblemButton" destination="Vmv-4s-Y5V" id="41Z-XX-gvh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -160,6 +157,7 @@
         <image name="emblem1" width="910" height="1097"/>
         <image name="emblem2" width="798" height="1080"/>
         <image name="emblem3" width="800" height="800"/>
+        <image name="emblem4" width="1300" height="1300"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

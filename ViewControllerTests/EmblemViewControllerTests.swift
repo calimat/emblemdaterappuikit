@@ -39,7 +39,7 @@ class EmblemViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertNotNil(sut.tankEmblemImageView, "Controller has no emblemImageView")
+        XCTAssertNotNil(sut.tankEmblemButton, "Controller has no tank emblem button")
     }
     
     func testcontrollerhasJungleUIImageView() {
@@ -70,9 +70,6 @@ class EmblemViewControllerTests: XCTestCase {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
-
-        
-        XCTAssert(sut.tankEmblemImageView.isUserInteractionEnabled)
         
         XCTAssert(sut.jungleEmblemImageView.isUserInteractionEnabled)
         
@@ -83,8 +80,6 @@ class EmblemViewControllerTests: XCTestCase {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
-       
-        XCTAssertEqual(sut.tankEmblemImageView.gestureRecognizers?.count, 1)
         
         XCTAssertEqual(sut.jungleEmblemImageView.gestureRecognizers?.count, 1)
         
