@@ -41,21 +41,15 @@
                                             <constraint firstAttribute="width" constant="360" id="2pv-ek-l3s"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xI-5bJ">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xI-5bJ">
                                         <rect key="frame" x="0.0" y="185" width="360" height="180"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ddx-vn-6Jm">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
-                                                <gestureRecognizers/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="180" id="RQJ-ZB-ieh"/>
-                                                </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="kbq-Su-8DA" appends="YES" id="iVV-ve-cgZ"/>
-                                                </connections>
-                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U00-4b-zxH">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="180"/>
+                                                <state key="normal" title="Button" image="emblem3"/>
+                                            </button>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Hn-1m-HKi">
-                                                <rect key="frame" x="185" y="0.0" width="175" height="180"/>
+                                                <rect key="frame" x="182.5" y="0.0" width="177.5" height="180"/>
                                                 <gestureRecognizers/>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="czJ-Vl-cN7" appends="YES" id="4t9-D8-S1l"/>
@@ -117,7 +111,7 @@
                         <outlet property="fighterEmblemButton" destination="f6a-QU-HxC" id="Twr-tU-4rw"/>
                         <outlet property="jungleEmblemImageView" destination="QAW-5W-O1N" id="ScU-UA-H4N"/>
                         <outlet property="mageEmblemImageView" destination="wID-pO-n7T" id="gZg-By-5Ou"/>
-                        <outlet property="marksmanEmblemImageView" destination="Ddx-vn-6Jm" id="vVk-Z4-2tI"/>
+                        <outlet property="marksmanEmblemButton" destination="U00-4b-zxH" id="FJk-Y6-chb"/>
                         <outlet property="supportEmblemButton" destination="DPz-tb-Rol" id="X8g-p3-d9x"/>
                         <outlet property="tankEmblemImageView" destination="6Hn-1m-HKi" id="vLM-nu-URe"/>
                     </connections>
@@ -165,6 +159,7 @@
     <resources>
         <image name="emblem1" width="910" height="1097"/>
         <image name="emblem2" width="798" height="1080"/>
+        <image name="emblem3" width="800" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
