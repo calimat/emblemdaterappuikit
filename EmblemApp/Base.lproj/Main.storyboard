@@ -17,50 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DpQ-sq-miM">
-                                <rect key="frame" x="24.5" y="80.5" width="365" height="735"/>
+                                <rect key="frame" x="27" y="80.5" width="360" height="735"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-fn-SNx">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="180"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-fn-SNx">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="180"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-QU-HxC">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="180"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="73r-Ni-KQz"/>
-                                                    <constraint firstAttribute="width" constant="180" id="hun-ua-QCU"/>
+                                                    <constraint firstAttribute="height" constant="180" id="joA-H0-XSP"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="emblem1"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPz-tb-Rol">
-                                                <rect key="frame" x="185" y="0.0" width="180" height="180"/>
+                                                <rect key="frame" x="182.5" y="0.0" width="177.5" height="180"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="svv-s7-ShG"/>
-                                                    <constraint firstAttribute="width" constant="180" id="y9W-Ra-CMC"/>
+                                                    <constraint firstAttribute="height" constant="180" id="r9F-0X-7zh"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="emblem2"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="360" id="2pv-ek-l3s"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xI-5bJ">
-                                        <rect key="frame" x="0.0" y="185" width="365" height="180"/>
+                                        <rect key="frame" x="0.0" y="185" width="360" height="180"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ddx-vn-6Jm">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="fGK-t5-HPF"/>
-                                                    <constraint firstAttribute="width" constant="180" id="goj-Lp-zwW"/>
+                                                    <constraint firstAttribute="width" constant="180" id="RQJ-ZB-ieh"/>
                                                 </constraints>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="kbq-Su-8DA" appends="YES" id="iVV-ve-cgZ"/>
                                                 </connections>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Hn-1m-HKi">
-                                                <rect key="frame" x="185" y="0.0" width="180" height="180"/>
+                                                <rect key="frame" x="185" y="0.0" width="175" height="180"/>
                                                 <gestureRecognizers/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="Q2Q-ZJ-7wn"/>
-                                                    <constraint firstAttribute="width" constant="180" id="qlH-LW-jxS"/>
-                                                </constraints>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="czJ-Vl-cN7" appends="YES" id="4t9-D8-S1l"/>
                                                 </connections>
@@ -68,26 +64,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NPf-fG-SeW">
-                                        <rect key="frame" x="0.0" y="370" width="365" height="180"/>
+                                        <rect key="frame" x="0.0" y="370" width="360" height="180"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QAW-5W-O1N">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="180" id="5Xb-3Y-6Lr"/>
-                                                    <constraint firstAttribute="height" constant="180" id="RCs-Qo-LrB"/>
+                                                    <constraint firstAttribute="width" constant="180" id="Ae3-11-m3j"/>
                                                 </constraints>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="w5I-JA-tWs" appends="YES" id="KHY-Vs-zwg"/>
                                                 </connections>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-rn-nWL">
-                                                <rect key="frame" x="185" y="0.0" width="180" height="180"/>
+                                                <rect key="frame" x="185" y="0.0" width="175" height="180"/>
                                                 <gestureRecognizers/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="8N5-o7-wHv"/>
-                                                    <constraint firstAttribute="width" constant="180" id="ywg-u4-ECo"/>
-                                                </constraints>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="2sX-iG-3X6" appends="YES" id="PYL-Ko-Hl4"/>
                                                 </connections>
@@ -98,21 +89,27 @@
                                         <rect key="frame" x="0.0" y="555" width="180" height="180"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="180" id="Z3t-6d-LwA"/>
-                                            <constraint firstAttribute="width" constant="180" id="vcZ-NB-Nbf"/>
+                                            <constraint firstAttribute="height" constant="180" id="2PS-Dc-vqL"/>
+                                            <constraint firstAttribute="width" constant="180" id="X0Q-zv-skE"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="vKY-ds-1Mq" appends="YES" id="qhM-1v-Hur"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="t7B-xI-5bJ" firstAttribute="trailing" secondItem="5cs-fn-SNx" secondAttribute="trailing" id="0Th-zP-u6j"/>
+                                    <constraint firstItem="NPf-fG-SeW" firstAttribute="top" secondItem="DpQ-sq-miM" secondAttribute="top" constant="370" id="4ii-Jz-Uf0"/>
+                                    <constraint firstItem="t7B-xI-5bJ" firstAttribute="trailing" secondItem="NPf-fG-SeW" secondAttribute="trailing" id="4nU-Xh-ibL"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DpQ-sq-miM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjc-iv-JWp"/>
-                            <constraint firstItem="DpQ-sq-miM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ooc-v4-yUF"/>
+                            <constraint firstItem="DpQ-sq-miM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vd5-aQ-g4t"/>
+                            <constraint firstItem="DpQ-sq-miM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPN-df-eaH"/>
+                            <constraint firstItem="DpQ-sq-miM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36.5" id="nXa-qQ-HvG"/>
                         </constraints>
                     </view>
                     <connections>
