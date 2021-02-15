@@ -22,7 +22,7 @@ class EmblemViewController: UIViewController {
         jungleEmblemButton:UIButton!
     
     @IBOutlet weak var
-        assassinEmblemImageView:UIImageView!
+        assassinEmblemButton:UIButton!
     
     @IBOutlet weak var mageEmblemImageView:UIImageView!
     

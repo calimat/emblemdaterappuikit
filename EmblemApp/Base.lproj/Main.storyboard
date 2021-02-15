@@ -61,13 +61,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="177.5" height="180"/>
                                                 <state key="normal" title="Button" image="emblem5"/>
                                             </button>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-rn-nWL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-xE-Nbo">
                                                 <rect key="frame" x="182.5" y="0.0" width="177.5" height="180"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="2sX-iG-3X6" appends="YES" id="PYL-Ko-Hl4"/>
-                                                </connections>
-                                            </imageView>
+                                                <state key="normal" title="Button" image="emblem6"/>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wID-pO-n7T">
@@ -98,7 +95,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="assassinEmblemImageView" destination="u7e-rn-nWL" id="Q1N-JZ-ypa"/>
+                        <outlet property="assassinEmblemButton" destination="XSN-xE-Nbo" id="Z3W-W3-gqd"/>
                         <outlet property="fighterEmblemButton" destination="f6a-QU-HxC" id="Twr-tU-4rw"/>
                         <outlet property="jungleEmblemButton" destination="Adj-jG-Zko" id="mu2-Fd-1Yk"/>
                         <outlet property="mageEmblemImageView" destination="wID-pO-n7T" id="gZg-By-5Ou"/>
@@ -153,6 +150,7 @@
         <image name="emblem3" width="800" height="800"/>
         <image name="emblem4" width="1300" height="1300"/>
         <image name="emblem5" width="512" height="512"/>
+        <image name="emblem6" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

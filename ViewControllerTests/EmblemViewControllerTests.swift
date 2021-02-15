@@ -10,7 +10,7 @@ import XCTest
 
 class EmblemViewControllerTests: XCTestCase {
     
-    func testcontrollerhasFighterUIImageView() {
+    func testcontrollerhasFighterUIButton() {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
@@ -18,7 +18,7 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.fighterEmblemButton, "Controller has no fighter emblem button")
     }
     
-    func testcontrollerhasSupportUIImageView() {
+    func testcontrollerhasSupportUIButton() {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
@@ -26,7 +26,7 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.supportEmblemButton, "Controller has no support emblem button")
     }
     
-    func testcontrollerhasMarksManUIImageView() {
+    func testcontrollerhasMarksManUIButton() {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
@@ -34,7 +34,7 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.marksmanEmblemButton, "Controller has no marksman emblem button")
     }
     
-    func testcontrollerhasTankUIImageView() {
+    func testcontrollerhasTankUIButton() {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
@@ -42,7 +42,7 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.tankEmblemButton, "Controller has no tank emblem button")
     }
     
-    func testcontrollerhasJungleUIImageView() {
+    func testcontrollerhasJungleUIButton() {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
@@ -50,12 +50,12 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.jungleEmblemButton, "Controller has no jungle emblem button")
     }
     
-    func testcontrollerhasAssassinUIImageView() {
+    func testcontrollerhasAssassinUIButton() {
         let (sut, _) = makeSUT()
         
         sut.loadViewIfNeeded()
         
-        XCTAssertNotNil(sut.assassinEmblemImageView, "Controller has no emblemImageView")
+        XCTAssertNotNil(sut.assassinEmblemButton, "Controller has no assassin emblem button")
     }
     
     func testcontrollerhasMageUIImageView() {
@@ -66,23 +66,6 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.mageEmblemImageView, "Controller has no emblemImageView")
     }
     
-    func testImageViews_loadView_AreUserIneractionEnabled() {
-        let (sut, _) = makeSUT()
-        
-        sut.loadViewIfNeeded()
-        
-        XCTAssert(sut.assassinEmblemImageView.isUserInteractionEnabled)
-    }
-    
-    func testImage_loadView_ViewsHaveOneTapGestureRecognizer() {
-        let (sut, _) = makeSUT()
-        
-        sut.loadViewIfNeeded()
-        
-        XCTAssertEqual(sut.assassinEmblemImageView.gestureRecognizers?.count, 1)
-        
-    }
-    
     class EmblemSettingsSpy: Settings {
         var setImageCallCount = 0
         func setupImages(imageViews:[UIImageView?]) {
@@ -91,12 +74,6 @@ class EmblemViewControllerTests: XCTestCase {
         
     }
     
-//    func testcontrollercallsEmblemSettingsFunctionOnViewDidLoad() {
-//        let (sut, settingsSpy) = makeSUT()
-//        sut.loadViewIfNeeded()
-//        XCTAssertEqual(settingsSpy.setImageCallCount, 1)
-//
-//    }
 //
     //MARK: - Helpers
     
