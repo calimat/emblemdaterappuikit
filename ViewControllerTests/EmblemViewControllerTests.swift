@@ -74,7 +74,6 @@ class EmblemViewControllerTests: XCTestCase {
         
     }
     
-//
     //MARK: - Helpers
     
     func makeSUT() -> (EmblemViewController, EmblemSettingsSpy) {
