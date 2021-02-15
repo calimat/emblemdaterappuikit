@@ -55,29 +55,30 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NPf-fG-SeW">
-                                        <rect key="frame" x="0.0" y="370" width="360" height="180"/>
+                                        <rect key="frame" x="0.0" y="370" width="360" height="200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adj-jG-Zko">
-                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="200"/>
                                                 <state key="normal" title="Button" image="emblem5"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-xE-Nbo">
-                                                <rect key="frame" x="182.5" y="0.0" width="177.5" height="180"/>
+                                                <rect key="frame" x="182.5" y="0.0" width="177.5" height="200"/>
                                                 <state key="normal" title="Button" image="emblem6"/>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wID-pO-n7T">
-                                        <rect key="frame" x="0.0" y="555" width="180" height="180"/>
-                                        <gestureRecognizers/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-cM-J1o">
+                                        <rect key="frame" x="0.0" y="575" width="360" height="160"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov9-Lx-ts8">
+                                                <rect key="frame" x="0.0" y="0.0" width="360" height="160"/>
+                                                <state key="normal" title="Button" image="emblem7"/>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="180" id="2PS-Dc-vqL"/>
-                                            <constraint firstAttribute="width" constant="180" id="X0Q-zv-skE"/>
+                                            <constraint firstAttribute="width" constant="360" id="QBL-2o-oPN"/>
                                         </constraints>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="vKY-ds-1Mq" appends="YES" id="qhM-1v-Hur"/>
-                                        </connections>
-                                    </imageView>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="t7B-xI-5bJ" firstAttribute="trailing" secondItem="5cs-fn-SNx" secondAttribute="trailing" id="0Th-zP-u6j"/>
@@ -98,7 +99,7 @@
                         <outlet property="assassinEmblemButton" destination="XSN-xE-Nbo" id="Z3W-W3-gqd"/>
                         <outlet property="fighterEmblemButton" destination="f6a-QU-HxC" id="Twr-tU-4rw"/>
                         <outlet property="jungleEmblemButton" destination="Adj-jG-Zko" id="mu2-Fd-1Yk"/>
-                        <outlet property="mageEmblemImageView" destination="wID-pO-n7T" id="gZg-By-5Ou"/>
+                        <outlet property="mageEmblemUIButton" destination="Ov9-Lx-ts8" id="Gee-2c-C3g"/>
                         <outlet property="marksmanEmblemButton" destination="U00-4b-zxH" id="FJk-Y6-chb"/>
                         <outlet property="supportEmblemButton" destination="DPz-tb-Rol" id="X8g-p3-d9x"/>
                         <outlet property="tankEmblemButton" destination="Vmv-4s-Y5V" id="41Z-XX-gvh"/>
@@ -151,6 +152,7 @@
         <image name="emblem4" width="1300" height="1300"/>
         <image name="emblem5" width="512" height="512"/>
         <image name="emblem6" width="200" height="200"/>
+        <image name="emblem7" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
