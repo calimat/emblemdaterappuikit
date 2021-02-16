@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import EmblemDateCalculator
 
 class EmblemViewController: UIViewController {
 
@@ -26,12 +27,7 @@ class EmblemViewController: UIViewController {
     
     @IBOutlet weak var mageEmblemUIButton: UIButton!
     
-    var emblemSettings:Settings = EmblemSettings()
-    
-    convenience init(emblemSettings:Settings) {
-        self.init()
-        self.emblemSettings = emblemSettings
-    }
+    var emblemDater: Dater!
     
     override func viewDidLoad() {
         super.viewDidLoad()

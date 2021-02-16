@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import EmblemDateCalculator
 @testable import EmblemApp
 
 class EmblemViewControllerTests: XCTestCase {
@@ -66,22 +67,31 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.mageEmblemUIButton, "Controller has no mage emblem button")
     }
     
-    class EmblemSettingsSpy: Settings {
-        var setImageCallCount = 0
-        func setupImages(imageViews:[UIImageView?]) {
-            setImageCallCount = 1
+    class EmblemSpyDater: Dater {
+        var messages = [Any]()
+        func getNextAvailableDate(for emblem: Emblem, inCurrentDate date: Date) -> Date {
+            return Date()
         }
         
+        
+    }
+    
+    func test_init_ItDoesntSendAnyMessagesToEmblemDateCalculator() {
+        let (sut, spyDater) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertTrue(spyDater.messages.isEmpty)
     }
     
     //MARK: - Helpers
     
-    func makeSUT() -> (EmblemViewController, EmblemSettingsSpy) {
-        let settingsSpy = EmblemSettingsSpy()
+    func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
+        let spyDater = EmblemSpyDater()
         let bundle = Bundle(for: EmblemViewController.self)
         let sut = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
-        sut.emblemSettings = settingsSpy
-        return (sut, settingsSpy)
+        sut.emblemDater = spyDater
+        return (sut, spyDater)
     }
     
     
