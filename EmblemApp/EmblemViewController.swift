@@ -34,5 +34,8 @@ class EmblemViewController: UIViewController {
     }
 
     
+    @IBAction func requestEmblemDate(_ sender: Any) {
+        emblemDater.getNextAvailableDate(for: .Fighter, inCurrentDate: Date())
+    }
 }
 
