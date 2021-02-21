@@ -69,6 +69,7 @@ class EmblemViewControllerTests: XCTestCase {
     
     class EmblemSpyDater: Dater {
         var messages = [Message]()
+        var dates = [Date]()
         
         enum Message: Equatable {
             case retrieve(dateForEmblem: Emblem)
@@ -76,6 +77,7 @@ class EmblemViewControllerTests: XCTestCase {
         
         func getNextAvailableDate(for emblem: Emblem, inCurrentDate date: Date) -> Date {
             messages.append(.retrieve(dateForEmblem: emblem))
+            dates.append(date)
             return Date()
         }
         
@@ -96,10 +98,13 @@ class EmblemViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         
         XCTAssertTrue(spyDater.messages.isEmpty)
+        XCTAssertTrue(spyDater.dates.isEmpty)
         
         sut.fighterEmblemButton.sendActions(for: .touchUpInside)
         
         XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: .Fighter)])
+        XCTAssertEqual(spyDater.dates.count, 1)
+        XCTAssertNotNil(spyDater.dates[0])
     }
     
     //MARK: - Helpers
