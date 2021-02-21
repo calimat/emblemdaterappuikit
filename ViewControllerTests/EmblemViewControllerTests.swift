@@ -95,6 +95,8 @@ class EmblemViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
+        XCTAssertTrue(spyDater.messages.isEmpty)
+        
         sut.fighterEmblemButton.sendActions(for: .touchUpInside)
         
         XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: .Fighter)])
