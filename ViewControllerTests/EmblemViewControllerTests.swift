@@ -107,12 +107,14 @@ class EmblemViewControllerTests: XCTestCase {
         
         XCTAssertTrue(spyDater.messages.isEmpty)
         XCTAssertTrue(spyDater.dates.isEmpty)
+        XCTAssertEqual(sut.dateLabel.text, "")
         
         sut.fighterEmblemButton.sendActions(for: .touchUpInside)
         
         XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: .Fighter)])
         XCTAssertEqual(spyDater.dates.count, 1)
         XCTAssertNotNil(spyDater.dates[0])
+        XCTAssertNotEqual(sut.dateLabel.text, "")
     }
     
     //MARK: - Helpers
