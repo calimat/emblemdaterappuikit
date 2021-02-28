@@ -67,6 +67,14 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.mageEmblemUIButton, "Controller has no mage emblem button")
     }
     
+    func test_sut_HasDateLabel() {
+        let(sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertNotNil(sut.dateLabel)
+    }
+    
     class EmblemSpyDater: Dater {
         var messages = [Message]()
         var dates = [Date]()

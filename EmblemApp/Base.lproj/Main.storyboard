@@ -116,6 +116,7 @@
                     </view>
                     <connections>
                         <outlet property="assassinEmblemButton" destination="XSN-xE-Nbo" id="Z3W-W3-gqd"/>
+                        <outlet property="dateLabel" destination="0bX-XP-LFN" id="hjB-5i-OWn"/>
                         <outlet property="fighterEmblemButton" destination="f6a-QU-HxC" id="Twr-tU-4rw"/>
                         <outlet property="jungleEmblemButton" destination="Adj-jG-Zko" id="mu2-Fd-1Yk"/>
                         <outlet property="mageEmblemUIButton" destination="Ov9-Lx-ts8" id="Gee-2c-C3g"/>

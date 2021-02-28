@@ -27,6 +27,8 @@ class EmblemViewController: UIViewController {
     
     @IBOutlet weak var mageEmblemUIButton: UIButton!
     
+    @IBOutlet weak var dateLabel: UILabel!
+    
     var emblemDater: Dater!
     
     override func viewDidLoad() {
