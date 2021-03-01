@@ -38,6 +38,9 @@
                                                     <constraint firstAttribute="height" constant="180" id="r9F-0X-7zh"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="emblem2"/>
+                                                <connections>
+                                                    <action selector="requestEmblemDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkH-OK-Mmn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

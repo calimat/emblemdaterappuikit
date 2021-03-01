@@ -117,6 +117,23 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotEqual(sut.dateLabel.text, "")
     }
     
+    func test_userTapsSupporButton_sendsARetrieveMessageOfSupportToEmblemDater() {
+        let (sut, spyDater) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertTrue(spyDater.messages.isEmpty)
+        XCTAssertTrue(spyDater.dates.isEmpty)
+        XCTAssertEqual(sut.dateLabel.text, "")
+        
+        sut.supportEmblemButton.sendActions(for: .touchUpInside)
+        
+        XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: .Support)])
+        XCTAssertEqual(spyDater.dates.count, 1)
+        XCTAssertNotNil(spyDater.dates[0])
+        XCTAssertNotEqual(sut.dateLabel.text, "")
+    }
+    
     //MARK: - Helpers
     
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {

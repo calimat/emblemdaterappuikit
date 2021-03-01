@@ -36,9 +36,15 @@ class EmblemViewController: UIViewController {
     }
 
     
-    @IBAction func requestEmblemDate(_ sender: Any) {
-        var date = emblemDater.getNextAvailableDate(for: .Fighter, inCurrentDate: Date())
-        dateLabel.text = "\(date)"
+    @IBAction func requestEmblemDate(_ sender: UIButton) {
+        if sender == fighterEmblemButton {
+            let date = emblemDater.getNextAvailableDate(for: .Fighter, inCurrentDate: Date())
+            dateLabel.text = "\(date)"
+        } else {
+            let date = emblemDater.getNextAvailableDate(for: .Support, inCurrentDate: Date())
+            dateLabel.text = "\(date)"
+        }
+        
     }
 }
 
