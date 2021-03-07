@@ -122,16 +122,7 @@ class EmblemViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertTrue(spyDater.messages.isEmpty)
-        XCTAssertTrue(spyDater.dates.isEmpty)
-        XCTAssertEqual(sut.dateLabel.text, "")
-        
-        sut.supportEmblemButton.sendActions(for: .touchUpInside)
-        
-        XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: .Support)])
-        XCTAssertEqual(spyDater.dates.count, 1)
-        XCTAssertNotNil(spyDater.dates[0])
-        XCTAssertNotEqual(sut.dateLabel.text, "")
+        assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Support, for: sut.supportEmblemButton, on: .touchUpInside)
     }
     
     //MARK: - Helpers
@@ -142,6 +133,20 @@ class EmblemViewControllerTests: XCTestCase {
         let sut = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
         sut.emblemDater = spyDater
         return (sut, spyDater)
+    }
+    
+    private func assertThat(sut: EmblemViewController,spyDater: EmblemSpyDater, recievesMessagesForEmblem emblem: Emblem, for control:UIControl, on action: UIControl.Event) {
+        
+        XCTAssertTrue(spyDater.messages.isEmpty)
+        XCTAssertTrue(spyDater.dates.isEmpty)
+        XCTAssertEqual(sut.dateLabel.text, "")
+        
+        control.sendActions(for: action)
+        
+        XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: emblem)])
+        XCTAssertEqual(spyDater.dates.count, 1)
+        XCTAssertNotNil(spyDater.dates[0])
+        XCTAssertNotEqual(sut.dateLabel.text, "")
     }
     
     
