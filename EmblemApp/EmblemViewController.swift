@@ -37,13 +37,14 @@ class EmblemViewController: UIViewController {
 
     
     @IBAction func requestEmblemDate(_ sender: UIButton) {
+        var date = Date()
+        let currentDate = Date()
         if sender == fighterEmblemButton {
-            let date = emblemDater.getNextAvailableDate(for: .Fighter, inCurrentDate: Date())
-            dateLabel.text = "\(date)"
+            date = emblemDater.getNextAvailableDate(for: .Fighter, inCurrentDate: currentDate)
         } else {
-            let date = emblemDater.getNextAvailableDate(for: .Support, inCurrentDate: Date())
-            dateLabel.text = "\(date)"
+            date = emblemDater.getNextAvailableDate(for: .Support, inCurrentDate: currentDate)
         }
+        dateLabel.text = "\(date)"
         
     }
 }
