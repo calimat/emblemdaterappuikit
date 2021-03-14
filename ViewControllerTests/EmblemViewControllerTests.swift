@@ -124,6 +124,15 @@ class EmblemViewControllerTests: XCTestCase {
         assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Marksman, for: sut.marksmanEmblemButton, on: .touchUpInside)
     }
     
+    
+    func test_userTapsTankButton_sendsARetrieveMessageOfTankToEmblemDater() {
+        let (sut, spyDater) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Tank, for: sut.tankEmblemButton, on: .touchUpInside)
+    }
+    
     //MARK: - Helpers
     
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
@@ -136,6 +145,8 @@ class EmblemViewControllerTests: XCTestCase {
     
     private func assertThat(sut: EmblemViewController,spyDater: EmblemSpyDater, recievesMessagesForEmblem emblem: Emblem, for control:UIControl, on action: UIControl.Event, file: StaticString = #file, line: UInt = #line ) {
         
+        XCTAssertNotNil(control.actions(forTarget: sut, forControlEvent: action), "The control does not have an action")
+        
         XCTAssertTrue(spyDater.messages.isEmpty)
         XCTAssertTrue(spyDater.dates.isEmpty)
         XCTAssertEqual(sut.dateLabel.text, "")
@@ -144,7 +155,6 @@ class EmblemViewControllerTests: XCTestCase {
         
         XCTAssertEqual(spyDater.messages, [.retrieve(dateForEmblem: emblem)], file: file, line: line)
         XCTAssertEqual(spyDater.dates.count, 1)
-        XCTAssertNotNil(spyDater.dates[0])
         XCTAssertNotEqual(sut.dateLabel.text, "")
     }
     

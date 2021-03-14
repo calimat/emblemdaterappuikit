@@ -60,6 +60,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmv-4s-Y5V">
                                                 <rect key="frame" x="182.5" y="0.0" width="177.5" height="180"/>
                                                 <state key="normal" title="Button" image="emblem4"/>
+                                                <connections>
+                                                    <action selector="requestEmblemDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuF-gR-qzI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
