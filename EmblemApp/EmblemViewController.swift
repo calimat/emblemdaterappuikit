@@ -46,6 +46,8 @@ class EmblemViewController: UIViewController {
             emblem = .Fighter
         case supportEmblemButton:
             emblem = .Support
+        case marksmanEmblemButton:
+            emblem = .Marksman
         default:
             emblem = .Fighter
         }
