@@ -42,6 +42,8 @@ class EmblemViewController: UIViewController {
         var emblem: Emblem = .Fighter
         
         switch sender {
+        case fighterEmblemButton:
+            emblem = .Fighter
         case supportEmblemButton:
             emblem = .Support
         default:
