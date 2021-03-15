@@ -52,6 +52,8 @@ class EmblemViewController: UIViewController {
             emblem = .Tank
         case jungleEmblemButton:
             emblem = .Jungle
+        case assassinEmblemButton:
+            emblem = .Assassin
         default:
             emblem = .Fighter
         }

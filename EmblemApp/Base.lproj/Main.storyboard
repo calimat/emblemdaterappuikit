@@ -79,6 +79,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-xE-Nbo">
                                                 <rect key="frame" x="182.5" y="0.0" width="177.5" height="200"/>
                                                 <state key="normal" title="Button" image="emblem6"/>
+                                                <connections>
+                                                    <action selector="requestEmblemDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsQ-6L-MFk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
