@@ -133,6 +133,14 @@ class EmblemViewControllerTests: XCTestCase {
         assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Tank, for: sut.tankEmblemButton, on: .touchUpInside)
     }
     
+    func test_userTapsJungleButton_sendsARetrieveMessageOfJungleToEmblemDater() {
+        let (sut, spyDater) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Jungle, for: sut.jungleEmblemButton, on: .touchUpInside)
+    }
+    
     //MARK: - Helpers
     
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
@@ -145,7 +153,7 @@ class EmblemViewControllerTests: XCTestCase {
     
     private func assertThat(sut: EmblemViewController,spyDater: EmblemSpyDater, recievesMessagesForEmblem emblem: Emblem, for control:UIControl, on action: UIControl.Event, file: StaticString = #file, line: UInt = #line ) {
         
-        XCTAssertNotNil(control.actions(forTarget: sut, forControlEvent: action), "The control does not have an action")
+        XCTAssertNotNil(control.actions(forTarget: sut, forControlEvent: action), "The control \(control) does not have an action")
         
         XCTAssertTrue(spyDater.messages.isEmpty)
         XCTAssertTrue(spyDater.dates.isEmpty)
