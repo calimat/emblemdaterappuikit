@@ -91,6 +91,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov9-Lx-ts8">
                                                 <rect key="frame" x="0.0" y="0.0" width="177.5" height="160"/>
                                                 <state key="normal" title="Button" image="emblem7"/>
+                                                <connections>
+                                                    <action selector="requestEmblemDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wF5-Jl-U72"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKC-yN-Q8D">
                                                 <rect key="frame" x="182.5" y="0.0" width="177.5" height="128"/>

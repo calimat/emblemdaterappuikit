@@ -149,6 +149,14 @@ class EmblemViewControllerTests: XCTestCase {
         assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Assassin, for: sut.assassinEmblemButton, on: .touchUpInside)
     }
     
+    func test_userTapsMageButton_sendsARetrieveMessageOfMageToEmblemDater() {
+        let (sut, spyDater) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        assertThat(sut: sut, spyDater: spyDater, recievesMessagesForEmblem: .Mage, for: sut.mageEmblemUIButton, on: .touchUpInside)
+    }
+    
     //MARK: - Helpers
     
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
