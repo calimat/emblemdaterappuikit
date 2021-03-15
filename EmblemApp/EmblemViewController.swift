@@ -25,7 +25,7 @@ class EmblemViewController: UIViewController {
     @IBOutlet weak var
         assassinEmblemButton: UIButton!
     
-    @IBOutlet weak var mageEmblemUIButton: UIButton!
+    @IBOutlet weak var mageEmblemButton: UIButton!
     
     @IBOutlet weak var dateLabel: UILabel!
     
@@ -54,7 +54,7 @@ class EmblemViewController: UIViewController {
             emblem = .Jungle
         case assassinEmblemButton:
             emblem = .Assassin
-        case mageEmblemUIButton:
+        case mageEmblemButton:
             emblem = .Mage
         default:
             emblem = .Fighter
