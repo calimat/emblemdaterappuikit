@@ -39,17 +39,6 @@
                ReferencedContainer = "container:EmblemApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F680761625AA7CCE000DDBFD"
-               BuildableName = "EmblemFileMapperTests.xctest"
-               BlueprintName = "EmblemFileMapperTests"
-               ReferencedContainer = "container:EmblemApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
