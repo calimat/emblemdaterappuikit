@@ -14,7 +14,6 @@
 		F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6522533AC5800911F61 /* Assets.xcassets */; };
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
 		F66EE67C2533B1E800911F61 /* EmblemViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */; };
-		F6B4F12425BCA4CB0047FBAF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B4F12325BCA4CB0047FBAF /* Settings.swift */; };
 		F6F5252925C5EC3D0090FFEA /* EmblemDateCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; };
 		F6F5252A25C5EC3D0090FFEA /* EmblemDateCalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -63,7 +62,6 @@
 		F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemViewControllerTests.swift; sourceTree = "<group>"; };
 		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmblemFileMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6B4F12325BCA4CB0047FBAF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EmblemDateCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,7 +114,6 @@
 		F66EE6482533AC5500911F61 /* EmblemApp */ = {
 			isa = PBXGroup;
 			children = (
-				F6B4F12225BCA4BA0047FBAF /* Protcols */,
 				F66EE6492533AC5500911F61 /* AppDelegate.swift */,
 				F66EE64B2533AC5500911F61 /* SceneDelegate.swift */,
 				F66EE64D2533AC5500911F61 /* EmblemViewController.swift */,
@@ -135,14 +132,6 @@
 				F66EE67D2533B1E800911F61 /* Info.plist */,
 			);
 			path = ViewControllerTests;
-			sourceTree = "<group>";
-		};
-		F6B4F12225BCA4BA0047FBAF /* Protcols */ = {
-			isa = PBXGroup;
-			children = (
-				F6B4F12325BCA4CB0047FBAF /* Settings.swift */,
-			);
-			path = Protcols;
 			sourceTree = "<group>";
 		};
 		F6F5252725C5EC3D0090FFEA /* Frameworks */ = {
@@ -284,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B4F12425BCA4CB0047FBAF /* Settings.swift in Sources */,
 				F66EE64E2533AC5500911F61 /* EmblemViewController.swift in Sources */,
 				F66EE64A2533AC5500911F61 /* AppDelegate.swift in Sources */,
 				F66EE64C2533AC5500911F61 /* SceneDelegate.swift in Sources */,
