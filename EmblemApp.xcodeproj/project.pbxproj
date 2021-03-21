@@ -14,6 +14,7 @@
 		F66EE6532533AC5800911F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6522533AC5800911F61 /* Assets.xcassets */; };
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
 		F66EE67C2533B1E800911F61 /* EmblemViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */; };
+		F6E9FD4426080F6A002F0B84 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E9FD4326080F6A002F0B84 /* SceneDelegateTests.swift */; };
 		F6F5252925C5EC3D0090FFEA /* EmblemDateCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; };
 		F6F5252A25C5EC3D0090FFEA /* EmblemDateCalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemViewControllerTests.swift; sourceTree = "<group>"; };
 		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmblemFileMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E9FD4326080F6A002F0B84 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EmblemDateCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 			children = (
 				F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */,
 				F66EE67D2533B1E800911F61 /* Info.plist */,
+				F6E9FD4326080F6A002F0B84 /* SceneDelegateTests.swift */,
 			);
 			path = ViewControllerTests;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66EE67C2533B1E800911F61 /* EmblemViewControllerTests.swift in Sources */,
+				F6E9FD4426080F6A002F0B84 /* SceneDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
