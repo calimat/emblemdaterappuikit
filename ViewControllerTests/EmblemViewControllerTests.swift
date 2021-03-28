@@ -74,31 +74,7 @@ class EmblemViewControllerTests: XCTestCase {
         
         XCTAssertNotNil(sut.dateLabel)
     }
-    
-    class EmblemSpyDater: Dater {
-        var messages = [Message]()
-        var dates = [Date]()
-        
-        enum Message: Equatable {
-            case retrieve(dateForEmblem: Emblem)
-        }
-        
-        func getNextAvailableDate(for emblem: Emblem, inCurrentDate date: Date) -> Date {
-            messages.append(.retrieve(dateForEmblem: emblem))
-            dates.append(date)
-            return Date()
-        }
-        
-        
-    }
-    
-    class EmblemSpyDateFormatter: EmblemFormatter {
-        func getFriendlyDate(_ date: Date) -> String {
-            return ""
-        }
-    }
   
-    
     func test_init_ItDoesntSendAnyMessagesToEmblemDateCalculator() {
         let (sut, spyDater) = makeSUT()
         
@@ -196,5 +172,27 @@ class EmblemViewControllerTests: XCTestCase {
         XCTAssertNotEqual(sut.dateLabel.text, "")
     }
     
+    class EmblemSpyDater: Dater {
+        var messages = [Message]()
+        var dates = [Date]()
+        
+        enum Message: Equatable {
+            case retrieve(dateForEmblem: Emblem)
+        }
+        
+        func getNextAvailableDate(for emblem: Emblem, inCurrentDate date: Date) -> Date {
+            messages.append(.retrieve(dateForEmblem: emblem))
+            dates.append(date)
+            return Date()
+        }
+        
+        
+    }
+    
+    class EmblemSpyDateFormatter: EmblemFormatter {
+        func getFriendlyDate(_ date: Date) -> String {
+            return ""
+        }
+    }
     
 }
