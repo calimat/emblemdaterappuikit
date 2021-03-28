@@ -10,15 +10,16 @@ import EmblemDateCalculator
 
 
 public class EmblemUIComposer {
-    private let emblemDater: Dater!
-    public init(emblemDater: Dater) {
-        self.emblemDater = emblemDater
+    public init() {}
+    
+    public static func emblemComposedWith(emblemDater: Dater) -> EmblemViewController {
+       return  makeEmblemViewController(emblemDater: emblemDater)
     }
     
-    func emblemViewController(emblemDater: Dater) -> EmblemViewController {
+    private static func makeEmblemViewController(emblemDater: Dater) -> EmblemViewController {
         let bundle = Bundle(for: EmblemViewController.self)
         let emblemViewController = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
-        emblemViewController.emblemDater = self.emblemDater
+        emblemViewController.emblemDater = emblemDater
         return emblemViewController
     }
 }

@@ -161,8 +161,7 @@ class EmblemViewControllerTests: XCTestCase {
     
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
         let spyDater = EmblemSpyDater()
-        let bundle = Bundle(for: EmblemViewController.self)
-        let sut = 
+        let sut = EmblemUIComposer.emblemComposedWith(emblemDater: spyDater)
         return (sut, spyDater)
     }
     

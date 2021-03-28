@@ -8,7 +8,7 @@
 import UIKit
 import EmblemDateCalculator
 
-class EmblemViewController: UIViewController {
+public class EmblemViewController: UIViewController {
 
     @IBOutlet weak var fighterEmblemButton: UIButton!
     
@@ -31,7 +31,7 @@ class EmblemViewController: UIViewController {
     
     var emblemDater: Dater!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
 

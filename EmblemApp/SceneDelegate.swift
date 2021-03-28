@@ -19,9 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func configureWindow() {
-        let bundle = Bundle(for: EmblemViewController.self)
-        let emblemViewController = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
-        emblemViewController.emblemDater = EmblemDater()
+        let emblemViewController = EmblemUIComposer.emblemComposedWith(emblemDater: EmblemDater())
         window?.rootViewController = emblemViewController
     }
 
