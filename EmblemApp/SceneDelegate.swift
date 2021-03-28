@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func configureWindow() {
-        let emblemViewController = EmblemUIComposer.emblemComposedWith(emblemDater: EmblemDater())
+        let emblemViewController = EmblemUIComposer.emblemComposedWith(emblemDater: EmblemDater(), emblemDateFormatter: EmblemDateFormatter())
         window?.rootViewController = emblemViewController
     }
 

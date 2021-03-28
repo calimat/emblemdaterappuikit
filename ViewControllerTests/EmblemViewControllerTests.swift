@@ -92,12 +92,27 @@ class EmblemViewControllerTests: XCTestCase {
         
     }
     
+    class EmblemSpyDateFormatter: EmblemFormatter {
+        func getFriendlyDate(_ date: Date) -> String {
+            return ""
+        }
+    }
+  
+    
     func test_init_ItDoesntSendAnyMessagesToEmblemDateCalculator() {
         let (sut, spyDater) = makeSUT()
         
         sut.loadViewIfNeeded()
         
         XCTAssertTrue(spyDater.messages.isEmpty)
+    }
+    
+    func test_init_EmblemViewControllerHasEmblemFormatter() {
+        let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertNotNil(sut.emblemDateFormatter)
     }
     
     func test_userTapsFighterButton_sendsARetrieveMessageToEmblemDater() {
@@ -161,7 +176,8 @@ class EmblemViewControllerTests: XCTestCase {
     
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
         let spyDater = EmblemSpyDater()
-        let sut = EmblemUIComposer.emblemComposedWith(emblemDater: spyDater)
+        let spyFormatter = EmblemSpyDateFormatter()
+        let sut = EmblemUIComposer.emblemComposedWith(emblemDater: spyDater, emblemDateFormatter: spyFormatter)
         return (sut, spyDater)
     }
     

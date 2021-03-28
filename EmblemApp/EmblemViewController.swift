@@ -31,6 +31,8 @@ public class EmblemViewController: UIViewController {
     
     var emblemDater: Dater!
     
+    var emblemDateFormatter: EmblemFormatter!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
     }
