@@ -15,6 +15,7 @@
 		F66EE6562533AC5800911F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */; };
 		F66EE67C2533B1E800911F61 /* EmblemViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66EE67B2533B1E800911F61 /* EmblemViewControllerTests.swift */; };
 		F6E9FD4426080F6A002F0B84 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E9FD4326080F6A002F0B84 /* SceneDelegateTests.swift */; };
+		F6E9FD4E2608122F002F0B84 /* EmblemUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E9FD4D2608122F002F0B84 /* EmblemUIComposer.swift */; };
 		F6F5252925C5EC3D0090FFEA /* EmblemDateCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; };
 		F6F5252A25C5EC3D0090FFEA /* EmblemDateCalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		F66EE67D2533B1E800911F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F680761725AA7CCE000DDBFD /* EmblemFileMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmblemFileMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E9FD4326080F6A002F0B84 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
+		F6E9FD4D2608122F002F0B84 /* EmblemUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmblemUIComposer.swift; sourceTree = "<group>"; };
 		F6F5252825C5EC3D0090FFEA /* EmblemDateCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EmblemDateCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				F66EE6522533AC5800911F61 /* Assets.xcassets */,
 				F66EE6542533AC5800911F61 /* LaunchScreen.storyboard */,
 				F66EE6572533AC5800911F61 /* Info.plist */,
+				F6E9FD4D2608122F002F0B84 /* EmblemUIComposer.swift */,
 			);
 			path = EmblemApp;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66EE64E2533AC5500911F61 /* EmblemViewController.swift in Sources */,
+				F6E9FD4E2608122F002F0B84 /* EmblemUIComposer.swift in Sources */,
 				F66EE64A2533AC5500911F61 /* AppDelegate.swift in Sources */,
 				F66EE64C2533AC5500911F61 /* SceneDelegate.swift in Sources */,
 			);

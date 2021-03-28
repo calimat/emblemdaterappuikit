@@ -162,8 +162,7 @@ class EmblemViewControllerTests: XCTestCase {
     func makeSUT() -> (EmblemViewController, EmblemSpyDater) {
         let spyDater = EmblemSpyDater()
         let bundle = Bundle(for: EmblemViewController.self)
-        let sut = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as! EmblemViewController
-        sut.emblemDater = spyDater
+        let sut = 
         return (sut, spyDater)
     }
     
