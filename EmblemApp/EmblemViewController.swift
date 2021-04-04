@@ -63,7 +63,8 @@ public class EmblemViewController: UIViewController {
         }
         
         date = emblemDater.getNextAvailableDate(for: emblem, inCurrentDate: currentDate)
-        dateLabel.text = "\(date)"
+        let friendlyDate = emblemDateFormatter.getFriendlyDate(date)
+        dateLabel.text = friendlyDate
         
     }
 }
