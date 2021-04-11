@@ -99,7 +99,11 @@
                                                 <rect key="frame" x="182.5" y="0.0" width="177.5" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday, May 1, 2021 at 3:00 AM " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-XP-LFN">
-                                                        <rect key="frame" x="-40.5" y="54" width="258.5" height="20.5"/>
+                                                        <rect key="frame" x="15.5" y="43.5" width="147" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="9dV-Hi-tjN"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="Rda-T6-HyT"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -107,8 +111,11 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="0bX-XP-LFN" firstAttribute="centerX" secondItem="PKC-yN-Q8D" secondAttribute="centerX" id="SPt-QO-64b"/>
-                                                    <constraint firstItem="0bX-XP-LFN" firstAttribute="centerY" secondItem="PKC-yN-Q8D" secondAttribute="centerY" id="zXn-Qi-bdY"/>
+                                                    <constraint firstItem="0bX-XP-LFN" firstAttribute="leading" secondItem="PKC-yN-Q8D" secondAttribute="leading" constant="15.5" id="1J5-x2-1Z2"/>
+                                                    <constraint firstItem="0bX-XP-LFN" firstAttribute="centerY" secondItem="PKC-yN-Q8D" secondAttribute="centerY" id="MDV-hy-eLZ"/>
+                                                    <constraint firstItem="0bX-XP-LFN" firstAttribute="top" secondItem="PKC-yN-Q8D" secondAttribute="top" constant="43.5" id="Z0g-Zv-q2T"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0bX-XP-LFN" secondAttribute="bottom" constant="43.5" id="eQW-Vp-E1C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0bX-XP-LFN" secondAttribute="trailing" constant="15" id="o1Z-Tq-qJG"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -180,7 +187,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
