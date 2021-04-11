@@ -35,6 +35,7 @@ public class EmblemViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        self.dateLabel.text = ""
     }
 
     
